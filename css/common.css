@@ -9,3 +9,14 @@ Stylesheet: common Stylesheet
 
 ******************************************************************/
 
+.video-area {
+    /*background-image: url(video/file.mp4);*/
+    border: none;
+    margin: 0 auto;
+    /*max-width: 2400px;
+    left: 0px;
+    top: -45px;*/
+    opacity: 1;
+    width: 100%;
+    height: auto;
+}
