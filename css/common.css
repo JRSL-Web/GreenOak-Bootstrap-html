@@ -32,22 +32,14 @@ Stylesheet: common Stylesheet
   .tagline {
     background: rgba(255, 255, 255, .75);
     position: absolute;
-    top: 30px;
-    left: 30px;
-    padding: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
   }
 
-/*.bg-img {
-    background-image: url("/video/file.mp4");
-    background-size: cover;
-    background-position: center 60%;
+  .tagline p {
+    text-align: center;
   }
-
-.video-area {
-    border: none;
-    margin: 0 auto;
-    opacity: 1;
-    width: 100%;
-    height: auto;
-}*/
 
