@@ -345,8 +345,9 @@ video {
 }
 
 .icon-box {
+  /*height: auto;*/
   height: 250px;
-  width: 300px;
+  width: 33.3333333333%;
 }
 
 .icon-box .icon-image {
@@ -363,4 +364,34 @@ video {
   width: 120px;
   top: 20%;
   left: 30%;
+}
+
+.icon-box .icon-image .icon-transition {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  height: 250px;
+  width: 300px;
+  /*background: #005452;*/
+  border-radius: 5px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  opacity: 0;
+  color: #fff;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  transition: all 0.6s ease;
+}
+
+.icon-box .icon-image .icon-transition:hover {
+  color: #fff;
+  opacity: 1;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
 }
