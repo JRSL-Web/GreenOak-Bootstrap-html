@@ -301,7 +301,20 @@ a.text-success:hover, a.text-success:focus {
 
 /* ▲▲ デフォルトカラー変更ここまで ▲▲ */
 
+/**********
+共通
+**********/
 
+footer {
+  background-color: #292a33;
+  color: #fff;
+}
+
+
+
+/**********
+Topページ
+**********/
 
 .sticky-top {
   /*position: -webkit-sticky;*/
@@ -394,4 +407,35 @@ video {
   opacity: 1;
   -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
+}
+
+.text-box {
+  background-image: url(../images/footer_bg.png);
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  height: 633px;
+  width: 100%;
+}
+
+.text-box hr {
+  width: 70%;
+  color: #fff;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.text-box .fixed-phrase {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.text-box .fixed-phrase p {
+  font-size: 0.8rem;
 }
