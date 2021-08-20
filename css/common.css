@@ -439,3 +439,16 @@ video {
 .text-box .fixed-phrase p {
   font-size: 0.8rem;
 }
+
+/*****************
+事業内容（services）
+******************/
+
+.article-header {
+  background-image: url(../images/services_mv.png);
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  padding: 0;
+}
