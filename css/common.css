@@ -341,7 +341,7 @@ video {
   z-index: -1;
 }
 
-.tagline {
+#nome .tagline {
   background: rgba(255, 255, 255, .75);
   position: absolute;
   top: 40%;
