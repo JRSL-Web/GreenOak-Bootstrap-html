@@ -482,3 +482,13 @@ video {
   padding-top: 15%;
   padding-left: 20%;
 }
+
+#about .catch-image {
+  background-blend-mode: overlay;
+  background-color: rgba(11, 80, 79, 0.7);
+  background-size: cover;
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
