@@ -485,10 +485,30 @@ video {
 
 #about .catch-image {
   background-blend-mode: overlay;
-  background-color: rgba(11, 80, 79, 0.7);
+  background-color: rgba(11, 80, 79, 0.5);
+  background-image: url(../images/about_03.png);
+  background-position: left top;
+  background-repeat: no-repeat;
   background-size: cover;
-  height: auto;
+  position: relative;
+  height: 380px;
   width: 100%;
   margin: 0 auto;
   padding: 0;
+}
+
+#about .mission {
+  position: absolute;
+  width: calc(100% / 2 );
+  top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  /*justify-content: center !important;
+  padding-left: 100px;
+  padding-right: 100px;
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  left: 30;
+  top: calc(50% - 20px);*/
 }
