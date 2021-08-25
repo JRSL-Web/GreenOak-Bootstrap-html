@@ -3,7 +3,7 @@ Site Name: Green Oak PCC Ltd.
 Site URL: https://greenoakpcc.com/
 Author: JRSL
 Copyright: 2021
-Last Updated: 2021.08.13
+Last Updated: 2021.08.25
 
 Stylesheet: common Stylesheet
 
@@ -341,24 +341,42 @@ video {
   z-index: -1;
 }
 
-#nome .tagline {
-  background: rgba(255, 255, 255, .75);
+/*
+
+#about .mission {
   position: absolute;
+  width: calc(100% / 2 );
+  top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+*/
+
+#home .tagline {
+  /*background: rgba(255, 255, 255, .75);*/
+  position: absolute;
+  width: calc(100% / 2 );
+  top: 70%;
+  left: 50%;
+  transform: translate(-70%, -50%);
+  -webkit-transform: translate(-70%, -50%);
+  -ms-transform: translate(-70%, -50%);
+  /*
   top: 40%;
   left: 50%;
   transform: translate(-40%, -50%);
   -webkit-transform: translate(-40%, -50%);
   -ms-transform: translate(-40%, -50%);
+  */
   padding: 1.5rem 2rem;
 }
 
 .lead {
-  text-align: center;
+  /*text-align: center;*/
   padding-top: 1rem;
 }
 
 .icon-box {
-  /*height: auto;*/
   height: 250px;
   width: 33.3333333333%;
 }
@@ -388,7 +406,6 @@ video {
   z-index: 2;
   height: 250px;
   width: 300px;
-  /*background: #005452;*/
   border-radius: 5px;
   -webkit-transition: .3s;
   transition: .3s;
@@ -503,12 +520,4 @@ video {
   top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-  /*justify-content: center !important;
-  padding-left: 100px;
-  padding-right: 100px;
-  display: flex;
-  width: 70%;
-  margin: 0 auto;
-  left: 30;
-  top: calc(50% - 20px);*/
 }
