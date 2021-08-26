@@ -356,11 +356,11 @@ video {
   /*background: rgba(255, 255, 255, .75);*/
   position: absolute;
   width: calc(100% / 2 );
-  top: 70%;
+  top: 85%;
   left: 50%;
-  transform: translate(-70%, -50%);
-  -webkit-transform: translate(-70%, -50%);
-  -ms-transform: translate(-70%, -50%);
+  transform: translate(-85%, -50%);
+  -webkit-transform: translate(-85%, -50%);
+  -ms-transform: translate(-85%, -50%);
   /*
   top: 40%;
   left: 50%;
@@ -378,7 +378,7 @@ video {
 
 .icon-box {
   height: 250px;
-  width: 33.3333333333%;
+  /*width: 33.3333333333%;*/
 }
 
 .icon-box .icon-image {
@@ -386,15 +386,17 @@ video {
   overflow: hidden;
   justify-content: center;
   height: 250px;
-  width: 300px;
+  /*width: 300px;*/
 }
 
 .icon-box .icon-image .icon {
   position: absolute;
   height: 150px;
   width: 120px;
-  top: 20%;
-  left: 30%;
+  top: 25%;
+  left: 20%;
+  /*top: 20%;
+  left: 30%;*/
 }
 
 .icon-box .icon-image .icon-transition {
