@@ -305,6 +305,27 @@ a.text-success:hover, a.text-success:focus {
 共通
 **********/
 
+/* Global Navigation */
+
+.nav-link {
+  border-top: 1px solid darkgray;
+  color: #6c757d;
+  line-height: 2;
+  padding: 8px;
+}
+
+.nav-link:hover {
+  border-top: 4px solid #0b504f;
+  color: #0b504f;
+}
+
+.active {
+  border-top: 4px solid #0b504f;
+  color: #0b504f;
+}
+
+
+/* Footer */
 footer {
   background-color: #292a33;
   color: #fff;
