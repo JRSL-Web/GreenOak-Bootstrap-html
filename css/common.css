@@ -362,27 +362,16 @@ a.text-success:hover, a.text-success:focus {
 
 /* Animation */
 
-.effect-fadein {
-  transition-property: all;
-  transition-duration: 500ms;
-  transition-timing-function: ease;
-  transition-delay: 0s;
+.effect {
+  clip-path: inset(0 100% 0 0);
+  transition: 1.4s cubic-bezier(0.37, 0, 0.63, 1);
+  transition-property: clip-path;
 }
 
-/*
-.fade {
-  animation: fadeIn 0.2s ease 0.3s 1 normal;
+.effect.is-animated {
+  clip-path: inset(0);
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0%;
-  }
-  100% {
-    opacity: 1
-  }
-}
-*/
 
 /* Footer */
 footer {
