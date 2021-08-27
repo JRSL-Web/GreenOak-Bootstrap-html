@@ -3,11 +3,17 @@ Site Name: Green Oak PCC Ltd.
 Site URL: https://greenoakpcc.com/
 Author: JRSL
 Copyright: 2021
-Last Updated: 2021.08.25
+Last Updated: 2021.08.27
 
 Stylesheet: common Stylesheet
 
 ******************************************************************/
+
+/*
+html:focus-within {
+  scroll-behavior: smooth;
+}
+*/
 
 /*------------------------------------
 - COLOR primary（デフォルトカラー変更）
@@ -295,10 +301,6 @@ a.text-success:hover, a.text-success:focus {
   color: #154c43 !important;
 }
 
-
-
-
-
 /* ▲▲ デフォルトカラー変更ここまで ▲▲ */
 
 /**********
@@ -306,20 +308,6 @@ a.text-success:hover, a.text-success:focus {
 **********/
 
 /* Global Navigation */
-
-/*
-.nav-item {
-  border-top: 1px solid darkgray;
-  color: #6c757d;
-}
-*/
-
-/*
-.nav-link {
-  border-top: 1px solid darkgray;
-  color: #6c757d;
-}
-*/
 
 .nav-item .nav-link {
   color: #6c757d;
@@ -337,13 +325,6 @@ a.text-success:hover, a.text-success:focus {
   left:0;
 }
 
-/*
-.nav-link:hover {
-  border-top: 4px solid #0b504f;
-  color: #0b504f;
-}
-*/
-
 .nav-item .nav-link:hover {
   color: #0b504f;
   position: relative;
@@ -359,12 +340,6 @@ a.text-success:hover, a.text-success:focus {
   top:0;
   left:0;
 }
-/*
-.active {
-  border-top: 4px solid #0b504f;
-  color: #0b504f;
-}
-*/
 
 .nav-item .active {
   color: #0b504f;
@@ -385,6 +360,29 @@ a.text-success:hover, a.text-success:focus {
 /* Breadcrumb */
 
 
+/* Animation */
+
+.effect-fadein {
+  transition-property: all;
+  transition-duration: 500ms;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+/*
+.fade {
+  animation: fadeIn 0.2s ease 0.3s 1 normal;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 1
+  }
+}
+*/
 
 /* Footer */
 footer {
@@ -418,7 +416,6 @@ video {
   height: auto;
   min-width: 100%;
   min-height: 100%;
-  /*background: url('../images/bg.png') no-repeat;*/
   background-size: cover;
   z-index: -1;
 }
@@ -438,7 +435,7 @@ video {
   /*background: rgba(255, 255, 255, .75);*/
   position: absolute;
   width: calc(100% / 2 );
-  top: 85%;
+  top: 83%;
   left: 50%;
   transform: translate(-85%, -50%);
   -webkit-transform: translate(-85%, -50%);
