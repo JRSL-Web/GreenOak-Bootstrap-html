@@ -620,9 +620,13 @@ video {
 	transform: translate(-50%, -50%);
 }
 
-
+/*****************
+お問い合わせ（contact）
+******************/
 
 #contact .main-content-header {
+  background-blend-mode: overlay;
+  background-color: rgba(11, 80, 79, 0.5);
   background-image: url(../images/contact_mv.jpg);
   background-position: left top;
   background-repeat: no-repeat;
