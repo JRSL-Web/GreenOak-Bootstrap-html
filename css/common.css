@@ -600,7 +600,7 @@ video {
 
 #about .catch-image {
   background-blend-mode: overlay;
-  background-color: rgba(11, 80, 79, 0.5);
+  background-color: rgba(11, 80, 79, 0.7);
   background-image: url(../images/about_03.png);
   background-position: left top;
   background-repeat: no-repeat;
@@ -626,7 +626,7 @@ video {
 
 #contact .main-content-header {
   background-blend-mode: overlay;
-  background-color: rgba(11, 80, 79, 0.5);
+  background-color: rgba(28, 109, 108, 0.7);
   background-image: url(../images/contact_mv.jpg);
   background-position: left top;
   background-repeat: no-repeat;
