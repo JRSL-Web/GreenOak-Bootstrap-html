@@ -303,9 +303,9 @@ a.text-success:hover, a.text-success:focus {
 
 /* ▲▲ デフォルトカラー変更ここまで ▲▲ */
 
-/**********
+/*************************
 共通
-**********/
+**************************/
 
 /* Global Navigation */
 
@@ -409,9 +409,9 @@ footer {
 
 
 
-/**********
-Topページ
-**********/
+/*************************
+Topページ（home）
+**************************/
 
 .sticky-top {
   /*position: -webkit-sticky;*/
@@ -555,9 +555,9 @@ video {
   font-size: 0.8rem;
 }
 
-/*****************
+/*************************
 事業内容（services）
-******************/
+**************************/
 
 #services .main-content-header {
   background-image: url(../images/services_mv.png);
@@ -576,9 +576,9 @@ video {
   padding-left: 20%;
 }
 
-/*****************
+/*************************
 会社概要（about）
-******************/
+**************************/
 
 #about .main-content-header {
   background-image: url(../images/about_mv.png);
@@ -620,9 +620,9 @@ video {
 	transform: translate(-50%, -50%);
 }
 
-/*****************
+/*************************
 お問い合わせ（contact）
-******************/
+**************************/
 
 #contact .main-content-header {
   background-blend-mode: overlay;
@@ -636,3 +636,23 @@ video {
   height: 650px;
   width: 100%;
 }
+
+/*************************
+プライバシーポリシー（privacy）
+**************************/
+
+#privacy .main-content-header {
+  background-blend-mode: overlay;
+  background-color: rgba(28, 109, 108, 0.7);
+  background-image: url(../images/privacy_policy_mv.jpg);
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  padding: 0;
+  height: 300px;
+  /*height: 650px;*/
+  width: 100%;
+}
+
+
