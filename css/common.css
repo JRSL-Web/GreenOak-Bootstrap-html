@@ -3,7 +3,7 @@ Site Name: Green Oak PCC Ltd.
 Site URL: https://greenoakpcc.com/
 Author: JRSL
 Copyright: 2021
-Last Updated: 2021.08.27
+Last Updated: 2021.09.01
 
 Stylesheet: common Stylesheet
 
@@ -655,4 +655,20 @@ video {
   width: 100%;
 }
 
+/*************************
+クッキーポリシー （cookies）
+**************************/
 
+#cookies .main-content-header {
+  /*background-blend-mode: overlay;
+  background-color: rgba(238, 245, 245, 0.7);*/
+  background-image: url(../images/cookies_policy_mv.jpg);
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  padding: 0;
+  height: 300px;
+  /*height: 650px;*/
+  width: 100%;
+}
