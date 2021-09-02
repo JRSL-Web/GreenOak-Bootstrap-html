@@ -293,11 +293,31 @@
         </div><!-- /.col-12 col-md text-center-->
       </div><!-- /.row-->
     </footer>
+
+    <div class="cookie-consent">
+      <p class="cookie-text">当サイトでは、サイトの利便向上のためクッキー(Cookie)を使用しています。<br>
+        クッキー(Cookie)使用に関する詳細は、「<a href="../cookies/cookies-policy.html">クッキーポリシー</a>」をご覧ください。
+      </p>
+      <div class="cookie-agree">OK</div>
+    </div><!-- /.cookie-consent -->
   
     <!-- JavaScriptプラグインの設定など -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="script.js"></script>
+
+    <!-- クッキー 同意 ポップアップ -->
+    <script type='text/javascript'>
+      let cas = document.querySelectorAll('.cookie-agree');
+      let ccs = document.querySelectorAll('.cookie-consent');
+      let idx;
+      cas.forEach((ca) => {
+        ca.addEventListener('click', () => {
+          idx = [].slice.call(cas).indexOf(ca);
+          ccs[idx].classList.add('cc-hide2');
+        })
+      });
+    </script>
 
   </body>
 </html>
