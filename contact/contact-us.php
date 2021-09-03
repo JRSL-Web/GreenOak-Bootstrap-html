@@ -93,9 +93,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       <form action="" method="POST">
         <h3 class="bg-light text-center my-5 py-3">お問い合わせフォーム</h3>
 
-        <div class="form-group">
+        <div class="form-group px-5">
           <div class="row">
-            <div class="col-2 ps-5">
+            <div class="col-2">
               <label for="inputName">お名前</label>
             </div><!-- /.col-2 -->
             <div class="col-2">
@@ -104,15 +104,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <div class="col-md-8">
               <input type="text" name="name" id="inputName" class="form-control" value="<?php echo htmlspecialchars($post['name']); ?>" required autofocus>
                 <?php if ($error['name'] === 'blank'): ?>
-                  <p class="error_msg">※お名前をご記入下さい</p>
+                  <p class="text-danger text-center error_msg">※お名前をご記入下さい</p>
                 <?php endif; ?>
             </div><!-- /.col-md-8 -->
           </div><!-- /.row -->
         </div><!-- /.form-group -->
 
-        <div class="form-group">
+        <div class="form-group px-5">
           <div class="row">
-            <div class="col-2 ps-5">
+            <div class="col-2">
               <label for="inputEmail">メールアドレス</label>
             </div><!-- /.col-2 -->
             <div class="col-2">
@@ -121,18 +121,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <div class="col-8">
               <input type="email" name="email" id="inputEmail" class="form-control" value="<?php echo htmlspecialchars($post['email']); ?>" required>
                 <?php if ($error['email'] === 'blank'): ?>
-                  <p class="text-center error_msg">※メールアドレスをご記入下さい</p>
+                  <p class="text-danger text-center error_msg">※メールアドレスをご記入下さい</p>
                 <?php endif; ?>
                 <?php if ($error['email'] === 'email'): ?>
-                  <p class="text-center error_msg">※メールアドレスを正しくご記入ください</p>
+                  <p class="text-danger text-center error_msg">※メールアドレスを正しくご記入ください</p>
                 <?php endif; ?>
             </div><!-- /.col-8 -->
           </div><!-- /.row -->
         </div><!-- /.form-group -->
 
-        <div class="form-group">  
+        <div class="form-group px-5">  
           <div class="row">
-            <div class="col-2 ps-5">
+            <div class="col-2">
               <label for="inputContent">お問い合わせ内容</label>
             </div><!-- /.col-2 -->
             <div class="col-2">
@@ -141,15 +141,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <div class="col-8">
               <textarea name="contact" id="inputContent" rows="10" class="form-control" required><?php echo htmlspecialchars($post['contact']); ?></textarea>
                 <?php if ($error['contact'] === 'blank'): ?>
-                  <p class="text-center error_msg">※お問い合わせ内容をご記入下さい</p>
+                  <p class="text-danger text-center error_msg">※お問い合わせ内容をご記入下さい</p>
                 <?php endif; ?>
             </div><!-- /.col-8 -->
           </div><!-- /.row -->
         </div><!-- /.form-group -->
 
         <div class="row">
-          <div class="col-8 offset-4 mt-5">
-            <button type="submit">確認画面へ</button>
+          <div class="col-8 offset-4 d-flex justify-content-center mt-5">
+            <button class="bg-primary text-white text-center rounded py-2 px-2" type="submit">確認画面へ</button>
           </div><!-- /.col-8 -->
         </div><!-- /.row offset-4 -->
       </form>    
