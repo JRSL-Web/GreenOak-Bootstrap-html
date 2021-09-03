@@ -1,3 +1,36 @@
+<?php
+session_start();
+
+// 入力画面からのアクセスでなければ、戻す
+if (!isset($_SESSION['form'])) {
+    header('Location: index.php');
+    exit();
+} else {
+    $post = $_SESSION['form'];
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // メールを送信する
+    $to = 'me@example.com';
+    $from = $post['email'];
+    $subject = 'お問い合わせが届きました';
+    $body = <<<EOT
+名前： {$post['name']}
+メールアドレス： {$post['email']}
+内容：
+{$post['contact']}
+EOT;
+    // var_dump($body);
+    // exit();
+    //mb_send_mail($to, $subject, $body, "From: {$from}");
+
+    // セッションを消してお礼画面へ
+    unset($_SESSION['form']);
+    header('Location: thanks.html');
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -18,6 +51,7 @@
 
 
 </head>
+
 <body id="contact">
   <header class="container site-header sticky-top py-1">
     <p id="logo"><a href="../index.html"><img src="../images/logo_sitetitle.png" alt="Green Oak PCC ロゴとサイトタイトル"></a></p>
@@ -55,24 +89,55 @@
       <p class="text-center fs-5 lh-lg">当ウェブサイトをご覧いただきありがとうございます。<br>
       ご不明な点やご質問がございましたら、お気軽にお問い合わせください。</p>
 
-      <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-          <form action="">
+      <!-- お問合せフォーム画面 -->
+      <form action="" method="POST">
+        <div class="form-group">
+          <div class="row">
+            <div class="col-3">
+              <label for="inputName">お名前</label>
+            </div><!-- /.col-3 -->
+            <div class="col-9">
+              <p class="display_item"><?php echo htmlspecialchars($post['name']); ?></p>
+            </div><!-- /.col-9 -->
+          </div><!-- /.row -->
+        </div><!-- /.form-group -->
 
-          </form>
-        </div>
+        <div class="form-group">
+          <div class="row">
+            <div class="col-3">
+              <label for="inputEmail">メールアドレス</label>
+            </div><!-- /.col-3 -->
+            <div class="col-9">
+              <p class="display_item"><?php echo htmlspecialchars($post['email']); ?></p>
+            </div><!-- /.col-9 -->
+          </div><!-- /.row -->
+        </div><!-- /.form-group -->
 
-      </div><!-- /.row -->
-
+        <div class="form-group">  
+          <div class="row">
+            <div class="col-3">
+              <label for="inputContent">お問い合わせ内容</label>
+            </div><!-- /.col-3 -->
+            <div class="col-9">
+              <p class="display_item"><?php echo nl2br(htmlspecialchars($post['contact'])); ?></p>
+            </div><!-- /.col-9 -->
+          </div><!-- /.row -->
+        </div><!-- /.form-group -->
+        <div class="row">
+        <div class="col-9 offset-3">
+          <a href="index.php">戻る</a>
+          <button type="submit">送信する</button>
+        </div><!-- /.col-9 offset-3 -->
+        </div><!-- /.row -->
+      </form>    
     </section><!-- /.container bg-white py-5 my-5 -->
 
     <section class="bg-white w-100 ps-md-3 text-center text-box">
-      <h2 class="fs-1 text-primary fw-bold">採用</h2>
-      <p>Green Oakチームの成長と、パートナーのビジネス拡大の支援を行っていただける仲間を募集しています。</p>
+      <!-- <h2 class="fs-1 text-primary fw-bold">採用</h2>
+      <p>Green Oakチームの成長と、パートナーのビジネス拡大の支援を行っていただける仲間を募集しています。</p> -->
 
       <hr>
     </section><!-- /.bg-white text-box w-100 my-md-3 ps-md-3 text-center -->
-  
   </main>
 
   <footer>
@@ -80,14 +145,10 @@
       <div class="col-12 col-md text-center">
         <small class="d-block mt-3 text-white">&copy; 2021
           <a class="text-white text-decoration-none" href="../index.html">Green Oak PCC Ltd.</a>
-        &nbsp;All rights reserved.
+            &nbsp;All rights reserved.
         </small>
       </div><!-- /.col-12 col-md text-center-->
     </div><!-- /.row -->
   </footer>
 
-  <!-- JavaScriptプラグインの設定など -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-  
 </body>
-</html>

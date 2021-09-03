@@ -667,6 +667,30 @@ video {
   width: 100%;
 }
 
+form > p, .container > p {
+  text-align: center;
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+
+label {
+  padding-top: 7px;
+}
+
+.form-group {
+  margin-bottom: 0;
+}
+
+.require_item {
+  /*background-color: #ff0000;
+  color: #fff;
+  text-align: center;*/
+  width: 62.5%;
+  padding: 3.75% 0;
+  /*float: right;*/
+}
+
+
 /*************************
 プライバシーポリシー（privacy）
 **************************/
