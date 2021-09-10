@@ -54,7 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <body id="contact">
   <header class="container site-header sticky-top py-1">
-    <p id="logo"><a href="../index.html"><img src="../images/logo_sitetitle.png" alt="Green Oak PCC ロゴとサイトタイトル"></a></p>
+    <p id="logo" class="float-left"><a href="../index.html"><img src="../images/logo_sitetitle.png" alt="Green Oak PCC ロゴとサイトタイトル"></a></p>
     <ul class="nav justify-content-end fw-bold">
       <li class="nav-item mx-3">
         <a class="nav-link" aria-current="page" href="../index.html">Home</a>

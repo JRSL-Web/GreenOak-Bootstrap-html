@@ -443,19 +443,19 @@ footer {
 Topページ（home）
 **************************/
 
-.sticky-top {
+#home .sticky-top {
   /*position: -webkit-sticky;*/
   background-color: white;
 }
 
-.bg-img {
+#home .bg-img {
   width: 100%;
   height: 100vh;
   position: relative;
   overflow: hidden;
 }
 
-video {
+#home video {
   position: absolute;
   top: 0;
   left: 0;
@@ -467,19 +467,7 @@ video {
   z-index: -1;
 }
 
-/*
-
-#about .mission {
-  position: absolute;
-  width: calc(100% / 2 );
-  top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-*/
-
 #home .tagline {
-  /*background: rgba(255, 255, 255, .75);*/
   position: absolute;
   width: calc(100% / 2 );
   top: 83%;
@@ -487,24 +475,19 @@ video {
   transform: translate(-85%, -50%);
   -webkit-transform: translate(-85%, -50%);
   -ms-transform: translate(-85%, -50%);
-  /*
-  top: 40%;
-  left: 50%;
-  transform: translate(-40%, -50%);
-  -webkit-transform: translate(-40%, -50%);
-  -ms-transform: translate(-40%, -50%);
-  */
   padding: 1.5rem 2rem;
 }
 
-.lead {
-  /*text-align: center;*/
+#home .lead {
   padding-top: 1rem;
 }
 
-.icon-box {
+#home .catch {
+  padding-top: 25%;
+}
+
+#home .icon-box {
   height: 250px;
-  /*width: 33.3333333333%;*/
 }
 
 .icon-box .icon-image {
@@ -515,7 +498,7 @@ video {
   /*width: 300px;*/
 }
 
-.icon-box .icon-image .icon {
+#home .icon-box .icon-image .icon {
   position: absolute;
   height: 150px;
   width: 120px;
@@ -525,7 +508,7 @@ video {
   left: 30%;*/
 }
 
-.icon-box .icon-image .icon-transition {
+#home .icon-box .icon-image .icon-transition {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -547,14 +530,14 @@ video {
   transition: all 0.6s ease;
 }
 
-.icon-box .icon-image .icon-transition:hover {
+#home .icon-box .icon-image .icon-transition:hover {
   color: #fff;
   opacity: 1;
   -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
 }
 
-.text-box {
+#home .text-box {
   background-image: url(../images/footer_bg.png);
   background-position: left top;
   background-repeat: no-repeat;
@@ -566,7 +549,7 @@ video {
   width: 100%;
 }
 
-.text-box hr {
+#home .text-box hr {
   width: 70%;
   color: #fff;
   position: absolute;
@@ -574,14 +557,14 @@ video {
   left: 50%;
   transform: translateX(-50%);
 }
-.text-box .fixed-phrase {
+#home .text-box .fixed-phrase {
   position: absolute;
   top: 70%;
   left: 50%;
   transform: translateX(-50%);
 }
 
-.text-box .fixed-phrase p {
+#home .text-box .fixed-phrase p {
   font-size: 0.8rem;
 }
 
@@ -665,12 +648,6 @@ video {
   padding: 0;
   height: 650px;
   width: 100%;
-}
-
-form > p, .container > p {
-  text-align: center;
-  font-size: 24px;
-  padding-bottom: 20px;
 }
 
 label {
