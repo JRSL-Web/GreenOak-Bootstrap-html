@@ -1,7 +1,11 @@
 <?php header("Content-Type:text/html;charset=utf-8"); ?>
 <?php //error_reporting(E_ALL | E_STRICT);
 ##-----------------------------------------------------------------------------------------------------------------##
-#
+#  
+#  GREEN OAK PCC Ltd.
+#  Introduction Date: 2021.09.13
+#  Last Updated: 2021.09.13
+#  
 #  PHPメールプログラム　フリー版 ver2.0.0 最終更新日2021/05/20
 #　改造や改変は自己責任で行ってください。
 #	
