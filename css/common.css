@@ -686,7 +686,16 @@ label {
   padding: 0;
   height: 300px;
   width: 100%;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*position: relative;*/
+}
+/*
+#thanks .thanks-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #thanks .thanks-text {
@@ -696,6 +705,7 @@ label {
   transform: translateY(-60%) translateX(-50%);
   -webkit- transform: translateY(-60%) translateX(-50%);
 }
+*/
 
 /*************************
 プライバシーポリシー（privacy）
