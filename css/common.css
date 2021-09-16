@@ -725,11 +725,17 @@ label {
   width: 100%;
 }
 
+#privacy .main-content-header .page-title {
+  opacity: 0.70; /* 70％不透明度(＝30％透過) */
+  background-color: #fff;
+}
+
+/*
 #privacy .list-disc {
   list-style-type: disc !important;
   padding-left: 40px;
 }
-
+*/
 
 /*************************
 クッキーポリシー （cookies）
@@ -747,6 +753,11 @@ label {
   height: 300px;
   /*height: 650px;*/
   width: 100%;
+}
+
+#cookies .main-content-header .page-title {
+  opacity: 0.70; /* 70％不透明度(＝30％透過) */
+  background-color: #fff;
 }
 
 /*************************
