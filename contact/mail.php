@@ -4,7 +4,7 @@
 #  
 #  GREEN OAK PCC Ltd.
 #  Introduction Date: 2021.09.13
-#  Last Updated: 2021.09.14
+#  Last Updated: 2021.09.16
 #  
 #  PHPメールプログラム　フリー版 ver2.0.0 最終更新日2021/05/20
 #　改造や改変は自己責任で行ってください。
