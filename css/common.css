@@ -712,8 +712,8 @@ label {
 **************************/
 
 #privacy .main-content-header {
-  /*background-blend-mode: overlay;
-  background-color: rgba(28, 109, 108, 0.7);*/
+  background-blend-mode: overlay;
+  background-color: rgba(33, 37, 41, 0.7);
   background-image: url(../images/privacy_policy_mv.jpg);
   background-position: left top;
   background-repeat: no-repeat;
@@ -826,3 +826,20 @@ label {
   }
 }
 
+/*************************
+応募フォーム （recruit）
+**************************/
+
+#recruit .main-content-header {
+  /*background-blend-mode: overlay;
+  background-color: rgba(28, 109, 108, 0.7);*/
+  background-image: url(../images/recruit_mv.jpg);
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  padding: 0;
+  height: 300px;
+  /*height: 650px;*/
+  width: 100%;
+}
