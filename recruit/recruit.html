@@ -54,7 +54,8 @@
 
     <section class="container bg-white py-5 my-5">
       <h2 class="text-center fs-5 lh-lg">Green Oak PCC Ltd.に興味をお持ちいただきありがとうございます。</h2>
-      <p class="text-center fs-5 lh-lg">ご応募、お待ちしております。また、ご不明な点やご質問がございましたら、お気軽にお問い合わせください。</p>
+      <p class="text-center fs-5 lh-lg">ご応募、お待ちしております。<br>
+        また、ご不明な点やご質問がございましたら、お気軽にお問い合わせください。</p>
       <div class="col-md-6 col-md-offset-3 border-success bg-light border-2 rounded py-5 px-5 my-3 mx-auto">
         <p class="text-center fs-6 lh-lg">お送りいただいたお問い合わせへの返信は、<br>
           親会社のジャパン・リスク・スペシャリスト(株)よりお送りいたします。</p>
@@ -63,50 +64,97 @@
 
     <section class="bg-white">
       <div class="row">
-        <h3 class="bg-light text-center py-3">お問い合わせフォーム</h3>
+        <h3 class="bg-light text-center py-3">応募フォーム</h3>
       </div><!-- /.row mt-5 -->
     </section><!-- /.bg-white py-5 my-5 -->
 
     <section class="container bg-white py-5 my-5">
       <form method="post" action="mail.php">
-        <fieldset class="col-md-8 col-md-offset-2 mx-auto">       
-          <div class="row mb-3">
-            <label for="お名前" class="col-sm-2 col-form-label">お名前</label>
-            <div class="col-sm-2">
-              <p class="bg-danger text-white text-center rounded require_item">必須</p>
-            </div><!-- /.col-sm-2 -->
-            <div class="col-sm-8">
-              <input type="text" class="form-control" id="お名前" name="お名前" placeholder="山田 太郎" aria-label="お名前">
-            </div><!-- /.col-sm-8 -->
-          </div><!-- /.row mb-3 -->
+        <fieldset class="col-md-8 col-md-offset-2 mx-auto">
+          <div class="mb-4">    
+            <div class="row">
+              <label for="お名前" class="col-sm-2 col-form-label">お名前</label>
+              <div class="col-sm-2">
+                <p class="bg-danger text-white text-center rounded require_item">必須</p>
+              </div><!-- /.col-sm-2 -->
+            </div><!-- /.row -->
+              <div class="col-sm-8">
+                <input type="text" class="form-control" id="お名前" name="お名前" placeholder="例）山田 太郎" aria-label="お名前">
+              </div><!-- /.col-sm-8 -->
+          </div><!-- /.mb-4 -->
+          
+          <div class="mb-4">
+            <div class="row">
+              <label for="Email" class="col-sm-2 col-form-label">メールアドレス（半角）</label>
+              <div class="col-sm-2">
+                <p class="bg-danger text-white text-center rounded require_item">必須</p>
+              </div><!-- /.col-sm-2 -->
+            </div><!-- /.row -->
+              <div class="col-sm-8">
+                <input type="text" class="form-control" id="Email" name="Email" placeholder="例）aabbcc@xyz.co.jp" aria-label="Email">
+              </div><!-- /.col-sm-8 -->
+          </div><!-- /.mb-4 -->
+
+          <div class="mb-4">
+            <div class="row">
+              <label for="Email" class="col-sm-2 col-form-label">電話番号（半角）</label>
+              <div class="col-sm-2">
+                <p class="bg-danger text-white text-center rounded require_item">必須</p>
+              </div><!-- /.col-sm-2 -->
+            </div><!-- /.row -->
+              <div class="col-sm-8">
+                <input type="text" class="form-control" id="Email" name="Email" placeholder="例）aabbcc@xyz.co.jp" aria-label="Email">
+              </div><!-- /.col-sm-8 -->
+          </div><!-- /.mb-4 -->
 
           <div class="row mb-3">
-            <label for="Email" class="col-sm-2 col-form-label">メールアドレス（半角）</label>
-            <div class="col-sm-2">
-              <p class="bg-danger text-white text-center rounded require_item">必須</p>
-            </div><!-- /.col-sm-2 -->
-            <div class="col-sm-8">
-              <input type="text" class="form-control" id="Email" name="Email" placeholder="aabbcc@xyz.co.jp" aria-label="Email">
-            </div><!-- /.col-sm-8 -->
-          </div><!-- /.row mb-3 -->
-
-          <div class="row mb-3">
-            <label for="会社名" class="col-sm-2 col-form-label">会社名</label>
+            <label for="年齢" class="col-sm-2 col-form-label">年齢</label>
             <div class="col-sm-2">
               <p class="bg-secondary text-white text-center rounded require_item">任意</p>
             </div><!-- /.col-sm-2 -->
             <div class="col-sm-8">
-              <input type="text" class="form-control" id="会社名" placeholder="株式会社○○○" aria-label="会社名">
+              <input type="text" class="form-control" id="年齢" placeholder="例）27" aria-label="年齢">
             </div><!-- /.col-sm-8 -->
           </div><!-- /.row mb-3 -->
 
           <div class="row mb-3">
-            <label for="お問い合わせの内容" class="col-sm-2 col-form-label">内容</label>
+            <label for="最終学歴" class="col-sm-2 col-form-label">最終学歴</label>
+            <div class="col-sm-2">
+              <p class="bg-secondary text-white text-center rounded require_item">任意</p>
+            </div><!-- /.col-sm-2 -->
+            <div class="col-sm-8">
+              <input type="text" class="form-control" id="最終学歴" placeholder="例）○○大学△△△学部□□学科" aria-label="最終学歴">
+            </div><!-- /.col-sm-8 -->
+          </div><!-- /.row mb-3 -->
+
+          <div class="row mb-3">
+            <label for="経歴" class="col-sm-2 col-form-label">経歴</label>
             <div class="col-sm-2">
               <p class="bg-danger text-white text-center rounded require_item">必須</p>
             </div><!-- /.col-sm-2 -->
             <div class="col-sm-8">
-              <textarea class="form-control" id="お問い合わせの内容" name="お問い合わせの内容" placeholder="お問い合わせの内容をご入力ください。" rows="5"></textarea>
+              <textarea class="form-control" id="経歴" name="経歴" placeholder="例) ◯◯大学卒業後、新卒で株式会社□□□□へ入社。営業部門で5年間活動。新規顧客開拓担当として、戦略の立案・施策のプランニングから各媒体の運用・見込み客とのコミュニケーションなど営業全般の業務を担当する。" rows="7"></textarea>
+            </div><!-- /.col-sm-8 -->
+          </div><!-- /.row mb-3 -->
+
+          <div class="row mb-3">
+            <label for="リンク" class="col-sm-2 col-form-label">リンク</label>
+            <div class="col-sm-2">
+              <p class="bg-secondary text-white text-center rounded require_item">任意</p>
+            </div><!-- /.col-sm-2 -->
+            <div class="col-sm-8">
+              <p class="text-secondary">ポートフォリオサイトやSNSアカウントなど、ご自身に関するWebサイトのURLをご記載ください。</p>
+              <input type="url" class="form-control" id="リンク" placeholder="例) https://github.com/xxx" aria-label="リンク">
+            </div><!-- /.col-sm-8 -->
+          </div><!-- /.row mb-3 -->
+
+          <div class="row mb-3">
+            <label for="Green Oak PCC Ltd.へのメッセージ" class="col-sm-2 col-form-label">Green Oak PCC Ltd.へのメッセージ</label>
+            <div class="col-sm-2">
+              <p class="bg-secondary text-white text-center rounded require_item">任意</p>
+            </div><!-- /.col-sm-2 -->
+            <div class="col-sm-8">
+              <textarea class="form-control" id="Green Oak PCC Ltd.へのメッセージ" name="Green Oak PCC Ltd.へのメッセージ" placeholder="メッセージまたは、お問い合わせの内容をご入力ください。" rows="5"></textarea>
             </div><!-- /.col-sm-8 -->
           </div><!-- /.row mb-3 -->
         </fieldset><!-- /.col-md-8 col-md-offset-2 mx-auto -->
@@ -117,6 +165,13 @@
           </div><!-- /.row my-5 d-flex justify-content-end button-area -->
       </form>
     </section><!-- /.container bg-white py-5 my-5 -->
+
+    <section class="bg-white w-100 ps-md-3 text-center text-box">
+      <!-- <h2 class="fs-1 text-primary fw-bold">採用</h2>
+      <p>Green Oakチームの成長と、パートナーのビジネス拡大の支援を行っていただける仲間を募集しています。</p> -->
+
+      <hr>
+    </section><!-- /.bg-white text-box w-100 my-md-3 ps-md-3 text-center -->
 
   </main>
 
