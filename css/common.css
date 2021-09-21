@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /******************************************************************
 Site Name: Green Oak PCC Ltd.
 Site URL: https://greenoakpcc.com/
@@ -673,6 +674,42 @@ label {
 }
 */
 
+#contact .label-required::after {
+  background-color: #dc3545;
+  color: #fff;
+  content: "必須";
+  display: inline-block;
+  height: 1.4rem;
+  line-height: 1.4rem;
+  /*height: 18px;
+  line-height: 18px;*/
+  margin-left: 8px;
+  padding: 0 0.5rem;
+  text-align: center;
+  /*width: 32px;*/
+  border: 1px solid #dc3545;
+  border-radius: 3px;
+  font-size: 0.8rem;
+}
+
+#contact .label-optional::after {
+  background-color: #6c757d;
+  color: #fff;
+  content: "任意";
+  display: inline-block;
+  height: 1.4rem;
+  line-height: 1.4rem;
+  /*height: 18px;
+  line-height: 18px;*/
+  margin-left: 8px;
+  padding: 0 0.5rem;
+  text-align: center;
+  /*width: 32px;*/
+  border: 1px solid #6c757d;
+  border-radius: 3px;
+  font-size: 0.8rem;
+}
+
 /*************************
 サンキュページ（thanks）
 **************************/
@@ -841,4 +878,40 @@ label {
   padding: 0;
   height: 300px;
   width: 100%;
+}
+
+#recruit .label-required::after {
+  background-color: #dc3545;
+  color: #fff;
+  content: "必須";
+  display: inline-block;
+  height: 1.4rem;
+  line-height: 1.4rem;
+  /*height: 18px;
+  line-height: 18px;*/
+  margin-left: 8px;
+  padding: 0 0.5rem;
+  text-align: center;
+  /*width: 32px;*/
+  border: 1px solid #dc3545;
+  border-radius: 3px;
+  font-size: 0.8rem;
+}
+
+#recruit .label-optional::after {
+  background-color: #6c757d;
+  color: #fff;
+  content: "任意";
+  display: inline-block;
+  height: 1.4rem;
+  line-height: 1.4rem;
+  /*height: 18px;
+  line-height: 18px;*/
+  margin-left: 8px;
+  padding: 0 0.5rem;
+  text-align: center;
+  /*width: 32px;*/
+  border: 1px solid #6c757d;
+  border-radius: 3px;
+  font-size: 0.8rem;
 }
