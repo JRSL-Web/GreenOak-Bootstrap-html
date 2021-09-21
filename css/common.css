@@ -915,3 +915,22 @@ label {
   border-radius: 3px;
   font-size: 0.8rem;
 }
+
+/*************************
+応募ページ　サンキュページ（recruit-thanks）
+**************************/
+
+#recruit-thanks .main-content-header {
+  background-image: url(../images/thanks_mv.jpg);
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  padding: 0;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
