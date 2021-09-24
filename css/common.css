@@ -363,6 +363,34 @@ header .nav-item .active::before {
 
 /* Animation */
 
+.scrollanime {
+  opacity: 0;
+}
+
+.fadeInDown {
+  animation-name: fadeInDown;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    /*transform: translateY(20px);*/
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.downup {
+  transform: translateY(100px);
+}
+
+
+
+/*
 .news__items.offs.effect {
   opacity: 0;
   transform: translate(0, 100px);
@@ -375,20 +403,36 @@ header .nav-item .active::before {
   -webkit-transition: all 2s ease;
   transition: all 2s ease；;
 }
+*/
 /*
-main {
+.effect {
   animation-name: fadein;
-  animation-duration: 3s;
+  animation-duration: 5s;
+  animation-iteration-count:2;
+  animation-fill-mode: forwards;
 }
 
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  90% {
+   opacity: 1;
+  }
+   100% {
+    opacity: 1;
+  } 
+  }
+*/
+/*
 @keyframes fadein{
   from {
-  opacity: 0;
-  transform: translatesy(20px);
+    opacity: 0;
+    transform: translateY(20px);
   }
   to {
-  opacity: 1;
-  transform: translatey(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 */
@@ -404,30 +448,6 @@ main {
   opacity: 1;
   visibility: visible;
   transform: translate(0px, 0px);
-}
-*/
-/*下から上にフェードイン
-.down-to-top {
-  opacity: 0.3;
-  transform: translateY(20px);
-  transition: all 1s;
-}
-
-.down-to-top.scrollin {
-  opacity: 1;
-  transform: translateY(0);
-}
-*/
-
-/*左から右にフェードイン
-.left-to-right {
-  opacity: 0.3;
-  transform: translateX(-20px);
-  transition: all 1s;
-}
-.left-to-right.scrollin {
-  opacity: 1;
-  transform: translate(0);
 }
 */
 
