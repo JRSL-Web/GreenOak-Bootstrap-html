@@ -24,27 +24,40 @@
 
 </head>
 <body id="services">
-    <header class="site-header sticky-top bg-white py-1">
-      <div class="container">
-        <p id="logo" class="float-left"><a href="../index.html"><img src="../images/logo_sitetitle.png" alt="Green Oak PCC ロゴとサイトタイトル"></a></p>
-        <ul class="nav justify-content-end fw-bold">
-          <li class="nav-item mx-3">
-            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
-          </li>
-          <li class="nav-item mx-3">
-            <a class="nav-link active" href="services.html">事業内容</a>
-          </li>
-          <li class="nav-item mx-3">
-            <a class="nav-link" href="../about/about.html">会社概要</a>
-          </li>
-          <li class="nav-item mx-3">
-            <a class="nav-link" href="../contact/contact-us.html">お問い合わせ</a>
-          </li>
-        </ul>
-      </div><!-- /.container -->  
-    </header>
+  <header class="site-header sticky-top bg-white py-1">
+    <div class="container">
+      <p id="logo" class="float-left"><a href="../index.html"><img src="../images/logo_sitetitle.png" alt="Green Oak PCC ロゴとサイトタイトル"></a></p>
+        <nav class="navbar navbar-expand-sm navbar-light bg-white">
+          <!-- navbar-togglerでレスポンシブ -->
+          <!-- レスポンシブ状態でないと、トグルアイコンは非表示になり、メニューが表示される -->
+          <!-- レスポンシブになると、トグルアイコンが表示され、メニューは非表示になる -->
+          <!-- data-bs-targetとidでコンテンツを連携させる -->
+          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav1" aria-controls="nav1" aria-expanded="false" aria-label="ナビゲーションの切替">
+            <!-- ハンバーガーメニューでボタンを表示 navbar-toggler-icon -->
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- ボタンが押されたら、以下のメニューを開く、メニューはulとliを使う -->
+          <div class="collapse navbar-collapse justify-content-end" id="nav1">
+            <ul class="navbar-nav fw-bold">
+              <li class="nav-item mx-3">
+                <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link active" href="services.html">事業内容</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="../about/about.html">会社概要</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="../contact/contact-us.html">お問い合わせ</a>
+              </li>
+            </ul>
+          </div><!-- /.collapse navbar-collapse #nav1 -->
+        </nav>
+    </div><!-- /.container -->  
+  </header>
 
-    <main>
+  <main>
       <div class="container bg-white my-2">
         <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
           <ol class="breadcrumb">
@@ -117,9 +130,9 @@
 
         <hr>
       </section><!-- /.bg-white text-box -->
-    </main>
+  </main>
 
-    <footer class="py-3">
+  <footer class="py-3">
       <div class="row">
         <div class="container">
           <ul class="nav w-75 justify-content-md-center mx-auto footer-navi">
@@ -140,7 +153,7 @@
           </small>
         </div><!-- /.col-12 col-md text-center-->
       </div><!-- /.row-->
-    </footer>
+  </footer>
 
     <!-- JavaScriptプラグインの設定など -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
