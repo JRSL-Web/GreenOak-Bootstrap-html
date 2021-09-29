@@ -22,20 +22,33 @@
   <header class="site-header sticky-top bg-white py-1">
     <div class="container">
       <p id="logo"><a href="../index.html"><img src="../images/logo_sitetitle.png" alt="Green Oak PCC ロゴとサイトタイトル"></a></p>
-      <ul class="nav justify-content-end fw-bold">
-        <li class="nav-item mx-3">
-          <a class="nav-link" aria-current="page" href="../index.html">Home</a>
-        </li>
-        <li class="nav-item mx-3">
-          <a class="nav-link" href="../services/services.html">事業内容</a>
-        </li>
-        <li class="nav-item mx-3">
-          <a class="nav-link" href="../about/about.html">会社概要</a>
-        </li>
-        <li class="nav-item mx-3">
-          <a class="nav-link" href="../contact/contact-us.html">お問い合わせ</a>
-        </li>
-      </ul>
+        <nav class="navbar navbar-expand-sm navbar-light bg-white">
+          <!-- navbar-togglerでレスポンシブ -->
+          <!-- レスポンシブ状態でないと、トグルアイコンは非表示になり、メニューが表示される -->
+          <!-- レスポンシブになると、トグルアイコンが表示され、メニューは非表示になる -->
+          <!-- data-bs-targetとidでコンテンツを連携させる -->
+          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav1" aria-controls="nav1" aria-expanded="false" aria-label="ナビゲーションの切替">
+            <!-- ハンバーガーメニューでボタンを表示 navbar-toggler-icon -->
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- ボタンが押されたら、以下のメニューを開く、メニューはulとliを使う -->
+          <div class="collapse navbar-collapse justify-content-end" id="nav1">
+            <ul class="navbar-nav fw-bold">
+              <li class="nav-item mx-3">
+                <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="../services/services.html">事業内容</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="../about/about.html">会社概要</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="../contact/contact-us.html">お問い合わせ</a>
+              </li>
+            </ul>
+          </div><!-- /.collapse navbar-collapse #nav1 -->
+        </nav>
     </div><!-- /.container -->
   </header>
 
