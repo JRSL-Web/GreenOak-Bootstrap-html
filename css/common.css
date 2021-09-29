@@ -362,6 +362,7 @@ header .nav-item .active::before {
 
 
 /* Animation */
+/* home・services・about のみ */
 
 .scrollanime {
   opacity: 0;
@@ -369,14 +370,13 @@ header .nav-item .active::before {
 
 .fadeInDown {
   animation-name: fadeInDown;
-  animation-duration: 5s;
+  animation-duration: 4s;
   animation-fill-mode: forwards;
 }
 
 @keyframes fadeInDown {
   from {
     opacity: 0;
-    /*transform: translateY(20px);*/
   }
   to {
     opacity: 1;
@@ -388,68 +388,6 @@ header .nav-item .active::before {
   transform: translateY(100px);
 }
 
-
-
-/*
-.news__items.offs.effect {
-  opacity: 0;
-  transform: translate(0, 100px);
-  -webkit-transform: translate(0, 100px);
-}
-.news__items.ons.effect {
-  opacity: 1;
-  -webkit-transform: translate(0, 0);
-  transform: translate(0, 0);
-  -webkit-transition: all 2s ease;
-  transition: all 2s ease；;
-}
-*/
-/*
-.effect {
-  animation-name: fadein;
-  animation-duration: 5s;
-  animation-iteration-count:2;
-  animation-fill-mode: forwards;
-}
-
-@keyframes fadein {
-  0% {
-    opacity: 0;
-  }
-  90% {
-   opacity: 1;
-  }
-   100% {
-    opacity: 1;
-  } 
-  }
-*/
-/*
-@keyframes fadein{
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-*/
-/*
-.effect {
-  transition: all 2000ms;
-  opacity: 0;
-  visibility: hidden;
-  transform: translate(0px, 50px);
-}
-
-.effectin {
-  opacity: 1;
-  visibility: visible;
-  transform: translate(0px, 0px);
-}
-*/
 
 /* Footer 上部 */
 
@@ -500,7 +438,6 @@ footer hr {
   height: 2px;
   color: #fff;
 }
-
 
 
 /*************************
@@ -559,7 +496,6 @@ Topページ（home）
   overflow: hidden;
   justify-content: center;
   height: 250px;
-  /*width: 300px;*/
 }
 
 #home .icon-box .icon-image .icon {
@@ -568,8 +504,6 @@ Topページ（home）
   width: 120px;
   top: 25%;
   left: 20%;
-  /*top: 20%;
-  left: 30%;*/
 }
 
 #home .icon-box .icon-image .icon-transition {
@@ -700,18 +634,9 @@ label {
 }
 
 .require_item {
-  /*background-color: #ff0000;
-  color: #fff;
-  text-align: center;*/
   width: 62.5%;
   padding: 3.75% 0;
-  /*float: right;*/
 }
-/*
-.button-area {
-  margin: 0 auto;
-}
-*/
 
 #contact .label-required::after {
   background-color: #dc3545;
@@ -720,12 +645,9 @@ label {
   display: inline-block;
   height: 1.4rem;
   line-height: 1.4rem;
-  /*height: 18px;
-  line-height: 18px;*/
   margin-left: 8px;
   padding: 0 0.5rem;
   text-align: center;
-  /*width: 32px;*/
   border: 1px solid #dc3545;
   border-radius: 3px;
   font-size: 0.8rem;
@@ -738,16 +660,14 @@ label {
   display: inline-block;
   height: 1.4rem;
   line-height: 1.4rem;
-  /*height: 18px;
-  line-height: 18px;*/
   margin-left: 8px;
   padding: 0 0.5rem;
   text-align: center;
-  /*width: 32px;*/
   border: 1px solid #6c757d;
   border-radius: 3px;
   font-size: 0.8rem;
 }
+
 
 /*************************
 サンキュページ（thanks）
@@ -765,23 +685,8 @@ label {
   display: flex;
   justify-content: center;
   align-items: center;
-  /*position: relative;*/
-}
-/*
-#thanks .thanks-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-#thanks .thanks-text {
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translateY(-60%) translateX(-50%);
-  -webkit- transform: translateY(-60%) translateX(-50%);
-}
-*/
 
 /*************************
 プライバシーポリシー（privacy）
@@ -797,7 +702,6 @@ label {
   margin: 0 auto;
   padding: 0;
   height: 300px;
-  /*height: 650px;*/
   width: 100%;
 }
 
@@ -806,20 +710,12 @@ label {
   background-color: #fff;
 }
 
-/*
-#privacy .list-disc {
-  list-style-type: disc !important;
-  padding-left: 40px;
-}
-*/
 
 /*************************
 クッキーポリシー （cookies）
 **************************/
 
 #cookies .main-content-header {
-  /*background-blend-mode: overlay;
-  background-color: rgba(238, 245, 245, 0.7);*/
   background-image: url(../images/cookies_policy_mv.jpg);
   background-position: left top;
   background-repeat: no-repeat;
@@ -827,7 +723,6 @@ label {
   margin: 0 auto;
   padding: 0;
   height: 300px;
-  /*height: 650px;*/
   width: 100%;
 }
 
@@ -837,7 +732,7 @@ label {
 }
 
 /*************************
-クッキー 同意 ポップアップウインドウ （）
+クッキー 同意 ポップアップウインドウ （homeのみ）
 **************************/
 
 .cookie-consent {
@@ -847,26 +742,10 @@ label {
   position: fixed;
   bottom: 0;
   width: 100%;
-  /*font-size: 12px;
-  color: #fff;*/
   background: rgba(11,80,79,.7);
-  /*padding: 1.2em;*/
   box-sizing: border-box;
   visibility: visible;
 }
-/*
-.cookie-consent a {
-  color: #fff !important;
-}
-*/
-
-/*
-.cookie-agree {
-  color: #0b504f;
-  background: #fff;
-  padding: .5em 1.5em;
-}
-*/
 
 .cookie-agree:hover {
   cursor: pointer;
@@ -902,6 +781,7 @@ label {
   }
 }
 
+
 /*************************
 応募フォーム （recruit）
 **************************/
@@ -926,8 +806,6 @@ label {
   display: inline-block;
   height: 1.4rem;
   line-height: 1.4rem;
-  /*height: 18px;
-  line-height: 18px;*/
   margin-left: 8px;
   padding: 0 0.5rem;
   text-align: center;
@@ -944,16 +822,14 @@ label {
   display: inline-block;
   height: 1.4rem;
   line-height: 1.4rem;
-  /*height: 18px;
-  line-height: 18px;*/
   margin-left: 8px;
   padding: 0 0.5rem;
   text-align: center;
-  /*width: 32px;*/
   border: 1px solid #6c757d;
   border-radius: 3px;
   font-size: 0.8rem;
 }
+
 
 /*************************
 応募ページ　サンキュページ（recruit-thanks）
