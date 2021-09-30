@@ -483,6 +483,10 @@ Topページ（home）
   padding-top: 1rem;
 }
 
+#home .pcc-movie {
+  width: 1000px;
+  height: auto;
+}
 #home .catch {
   padding-top: 25%;
 }
