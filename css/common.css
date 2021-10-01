@@ -560,6 +560,12 @@ Topページ（home）
   padding-left: 20%;
 }
 
+#services .labuan-movie {
+  width: 560px;
+  height: auto;
+  margin: 0 auto;
+}
+
 /*************************
 会社概要（about）
 **************************/
