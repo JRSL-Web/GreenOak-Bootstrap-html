@@ -719,6 +719,10 @@ label {
   background-color: #fff;
 }
 
+#topics .topic-card {
+  width: 32%;
+}
+
 /*************************
 プライバシーポリシー（privacy）
 **************************/
