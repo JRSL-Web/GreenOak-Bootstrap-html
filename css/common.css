@@ -4,7 +4,7 @@ Site Name: Green Oak PCC Ltd.
 Site URL: https://greenoakpcc.com/
 Author: JRSL
 Copyright: 2021
-Last Updated: 2021.10.13
+Last Updated: 2021.10.15
 
 Stylesheet: common Stylesheet
 
@@ -618,6 +618,56 @@ Topページ（home）
   padding-left: 0 !important;
 }
 
+
+/*************************
+よくある質問（faq）
+**************************/
+
+#faq .main-content-header {
+  background-image: url(../images/faq_mv.jpg);
+  /*background-position: left top;*/
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  padding: -3rem 0 0 0;
+  height: 650px;
+  width: 100%;
+}
+
+#faq .main-content-header .page-title {
+  opacity: 0.70; /* 70％不透明度(＝30％透過) */
+  background-color: #fff;
+  padding: 1.5rem;
+}
+
+
+/*************************
+トピックス（topics）
+**************************/
+
+#topics .main-content-header {
+  background-image: url(../images/topics_mv.jpg);
+  /*background-position: left top;*/
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  padding: 0;
+  height: 650px;
+  width: 100%;
+}
+
+#topics .main-content-header .page-title {
+  opacity: 0.70; /* 70％不透明度(＝30％透過) */
+  background-color: #fff;
+}
+
+#topics .topic-card {
+  width: 32%;
+}
+
+
 /*************************
 お問い合わせ（contact）
 **************************/
@@ -697,31 +747,6 @@ label {
   align-items: center;
 }
 
-
-/*************************
-トピックス（topics）
-**************************/
-
-#topics .main-content-header {
-  background-image: url(../images/topics_mv.jpg);
-  /*background-position: left top;*/
-  background-position: bottom top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 0 auto;
-  padding: 0;
-  height: 650px;
-  width: 100%;
-}
-
-#topics .main-content-header .page-title {
-  opacity: 0.70; /* 70％不透明度(＝30％透過) */
-  background-color: #fff;
-}
-
-#topics .topic-card {
-  width: 32%;
-}
 
 /*************************
 プライバシーポリシー（privacy）
