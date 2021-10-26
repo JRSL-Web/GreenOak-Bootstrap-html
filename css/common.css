@@ -642,11 +642,16 @@ Topページ（home）
   padding: 1.5rem;
 }
 
+#faq .internal-link {
+  margin-bottom: 70px;
+}
+
 #faq .anchor { /* ページ内リンクのジャンプ先の位置を調整 */
   display: block;
-  padding-top: 200px;
-  margin-top: -200px;
+  padding-top: 170px;
+  margin-top: -170px;
 }
+
 
 /*************************
 トピックス（topics）
