@@ -567,13 +567,13 @@ Topページ（home）
 **************************/
 
 #about .main-content-header {
-  background-image: url(../images/about_mv.png);
+  background-image: url(../images/about_mv.jpg);
   background-position: left top;
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
   padding: 0;
-  height: 650px;
+  height: 600px;
   width: 100%;
 }
 
