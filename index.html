@@ -21,6 +21,11 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="library/scrollanime.js"></script>
+
+    <!-- ページトップへ戻るボタン用 jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- ページトップへ戻るボタン用 Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
     
 </head>
 
@@ -296,6 +301,9 @@
       </div><!-- /.container  d-flex flex-row-->
       <!-- <div class="bg-white text-primary cookie-agree">OK</div> -->
     </div><!-- /.cookie-consent -->
+
+    <!-- Page Top ボタン -->
+    <div id="page_top"><a href="#"></a></div>
   
     <!-- JavaScriptプラグインの設定など -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
@@ -312,6 +320,27 @@
           idx = [].slice.call(cas).indexOf(ca);
           ccs[idx].classList.add('cc-hide2');
         })
+      });
+    </script>
+    
+    <!-- Page Top ボタン jQuery -->
+    <script>
+      jQuery(function() {
+            var pagetop = $('#page_top');   
+            pagetop.hide();
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {  //100pxスクロールしたら表示
+                    pagetop.fadeIn();
+                } else {
+                    pagetop.fadeOut();
+                }
+            });
+            pagetop.click(function () {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 500); //0.5秒かけてトップへ移動
+                return false;
+            });
       });
     </script>
 

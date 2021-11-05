@@ -3,8 +3,8 @@
 Site Name: Green Oak PCC Ltd.
 Site URL: https://greenoakpcc.com/
 Author: JRSL
-Copyright: 2021
-Last Updated: 2021.11.04
+Copyright: © 2021 Green Oak PCC Ltd. All rights reserved.
+Last Updated: 2021.11.05
 
 Stylesheet: common Stylesheet
 
@@ -437,6 +437,46 @@ footer hr {
   width: 100%;
   height: 2px;
   color: #fff;
+}
+
+
+/* Page Top ボタン */
+
+#page_top {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 30px;
+  bottom: 100px;
+  background: #0b504f;
+  opacity: 0.6;
+  border-radius: 50%;
+}
+
+#page_top a {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+}
+
+#page_top a::before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f102';
+  font-size: 25px;
+  color: #fff;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: -12px;
+  /*top: -5px;*/
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
 }
 
 
