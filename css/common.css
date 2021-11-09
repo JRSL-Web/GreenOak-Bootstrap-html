@@ -498,8 +498,8 @@ Topページ（home）
 
 #home video {
   position: absolute;
-  top: 0;
-  left: 0;
+   /*top: 0;
+  left: 0;*/
   width: auto;
   height: auto;
   min-width: 100%;
