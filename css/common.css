@@ -484,6 +484,17 @@ footer hr {
 Topページ（home）
 **************************/
 
+#home video {
+  position: absolute;
+}
+
+#home .tagline {
+  position: absolute;
+  width: 100%;
+  top: 40%;
+  padding: 1.5rem 2rem;
+}
+
 /* ▼▼ 768px以上 ▼▼ */
 @media only screen and (min-width: 768px) {
   #home .sticky-top {
@@ -500,8 +511,6 @@ Topページ（home）
 
   #home video {
     position: absolute;
-     /*top: 0;
-    left: 0;*/
     width: auto;
     height: auto;
     min-width: 100%;
