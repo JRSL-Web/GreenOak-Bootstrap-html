@@ -583,6 +583,25 @@ Topページ（home）
 事業内容（services）
 **************************/
 
+#services .main-content-header {
+  background-image: url(../images/services_mv.jpg);
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  height: auto;
+}
+
+#services .main-content-header .page-title {
+  font-size: 2.5rem;
+  padding-top: 30%;
+  padding-bottom: calc(100% - 2.5rem - 30% );
+}
+
+/* width: calc(100% / 2 ); */
+
 /* ▼▼ 768px以上 ▼▼ */
 @media only screen and (min-width: 768px) { 
   #services .main-content-header {
