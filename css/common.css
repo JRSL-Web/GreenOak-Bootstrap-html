@@ -594,9 +594,9 @@ Topページ（home）
 
 #services .main-content-header {
   background-image: url(../images/services_mv.jpg);
-  background-position: left top;
+  background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto 200px;
   margin: 0 auto;
   padding: 0;
   width: 100%;
@@ -645,9 +645,9 @@ Topページ（home）
 
 #about .main-content-header {
   background-image: url(../images/about_mv.jpg);
-  background-position: left top;
+  background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto 200px;
   margin: 0 auto;
   padding: 0;
   /*width: 100%;
