@@ -787,14 +787,16 @@ Topページ（home）
 
 #topics .main-content-header {
   background-image: url(../images/topics_mv.jpg);
-  /*background-position: left top;*/
-  background-position: left bottom;
+  background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
+  /*background-size: auto 400px;
+  background-size: cover;*/
   margin: 0 auto;
   padding: 0;
-  height: 650px;
-  width: 100%;
+  width: auto;
+  height: 400px;
+  /*height: 650px;
+  width: 100%;*/
 }
 
 #topics .main-content-header .page-title {
@@ -802,8 +804,28 @@ Topページ（home）
   background-color: #fff;
 }
 
-#topics .topic-card {
-  width: 32%;
+/* ▼▼ 768px以上 ▼▼ */
+@media only screen and (min-width: 768px) {
+  #topics .main-content-header {
+    background-image: url(../images/topics_mv.jpg);
+    /*background-position: left top;*/
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    padding: 0;
+    height: 650px;
+    width: 100%;
+  }
+
+  #topics .main-content-header .page-title {
+    opacity: 0.70; /* 70％不透明度(＝30％透過) */
+    background-color: #fff;
+  }
+
+  #topics .topic-card {
+    width: 32%;
+  }
 }
 
 
