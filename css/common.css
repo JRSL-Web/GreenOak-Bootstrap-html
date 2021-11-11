@@ -660,6 +660,20 @@ Topページ（home）
   padding-bottom: calc(100% - 2.5rem - 30% );
 }
 
+#about .catch-image {
+  background-blend-mode: overlay;
+  background-color: rgba(11, 80, 79, 0.7);
+  background-image: url(../images/about_03.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto 500px;
+  position: relative;
+  /*height: 380px;
+  width: 100%;*/
+  margin: 0 auto;
+  padding: 0;
+}
+
 /* ▼▼ 768px以上 ▼▼ */
 @media only screen and (min-width: 768px) {
   #about .main-content-header {
