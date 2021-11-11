@@ -4,7 +4,7 @@ Site Name: Green Oak PCC Ltd.
 Site URL: https://greenoakpcc.com/
 Author: JRSL
 Copyright: © 2021 Green Oak PCC Ltd. All rights reserved.
-Last Updated: 2021.11.10
+Last Updated: 2021.11.11
 
 Stylesheet: common Stylesheet
 
@@ -733,33 +733,52 @@ Topページ（home）
 
 #faq .main-content-header {
   background-image: url(../images/faq_mv.jpg);
-  /*background-position: left top;*/
-  background-position: left bottom;
+  background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
+  /*background-size: cover;*/
   margin: 0 auto;
   padding: 0;
-  height: 650px;
+  height: 450px;
   width: 100%;
 }
 
 #faq .main-content-header .page-title {
   opacity: 0.70; /* 70％不透明度(＝30％透過) */
   background-color: #0b504f;
-  /*background-color: #fff;*/
-  padding: 1.5rem;
+  font-size: 2.5rem;
+  /*padding-top: 30%;
+  padding-bottom: calc(100% - 2.5rem - 30% );*/
 }
 
-#faq .internal-link {
-  margin-bottom: 70px;
-}
+/* ▼▼ 768px以上 ▼▼ */
+@media only screen and (min-width: 768px) {
+  #faq .main-content-header {
+    background-image: url(../images/faq_mv.jpg);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    padding: 0;
+    height: 650px;
+    width: 100%;
+  }
 
-#faq .anchor { /* ページ内リンクのジャンプ先の位置を調整 */
-  display: block;
-  padding-top: 170px;
-  margin-top: -170px;
-}
+  #faq .main-content-header .page-title {
+    opacity: 0.70; /* 70％不透明度(＝30％透過) */
+    background-color: #0b504f;
+    padding: 1.5rem;
+  }
 
+  #faq .internal-link {
+    margin-bottom: 70px;
+  }
+
+  #faq .anchor { /* ページ内リンクのジャンプ先の位置を調整 */
+    display: block;
+    padding-top: 170px;
+    margin-top: -170px;
+  }
+}
 
 /*************************
 トピックス（topics）
