@@ -599,8 +599,8 @@ Topページ（home）
   background-size: auto 200px;
   margin: 0 auto;
   padding: 0;
-  width: 100%;
-  height: auto;
+  /*width: 100%;
+  height: auto;*/
 }
 
 #services .main-content-header .page-title {
@@ -735,11 +735,12 @@ Topページ（home）
   background-image: url(../images/faq_mv.jpg);
   background-position: center center;
   background-repeat: no-repeat;
-  /*background-size: cover;*/
+  /*background-size: auto 500px;
+  background-size: cover;*/
   margin: 0 auto;
   padding: 0;
-  height: 450px;
-  width: 100%;
+  width: auto;
+  height: 500px;
 }
 
 #faq .main-content-header .page-title {
