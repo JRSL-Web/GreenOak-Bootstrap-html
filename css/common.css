@@ -390,29 +390,32 @@ header .nav-item .active::before {
 
 
 /* Footer 上部 */
-
+/* ▼▼ mobile ▼▼ */
 .text-box {
   background-image: url(../images/footer_bg.png);
   background-position: left top;
   background-repeat: no-repeat;
+  /*background-size: auto 400px;*/
   background-size: cover;
   margin: 0 auto;
   padding: 0;
   position: relative;
-  height: 633px;
+  height: 400px;
   width: 100%;
 }
 
 .text-box hr {
-  width: 70%;
+  width: 80%;
   height: 2px;
   color: #fff;
   position: absolute;
-  top: 65%;
+  top: 60%;
   left: 50%;
   transform: translateX(-50%);
 }
+
 .text-box .fixed-phrase {
+  width: 90%;
   position: absolute;
   top: 70%;
   left: 50%;
@@ -420,8 +423,47 @@ header .nav-item .active::before {
 }
 
 .text-box .fixed-phrase p {
-  font-size: 0.8rem;
+  font-size: 0.5rem;
 }
+/* ▲▲ mobile ▲▲ */
+
+
+/* ▼▼ 768px以上 ▼▼ */
+@media only screen and (min-width: 768px) {
+  .text-box {
+    background-image: url(../images/footer_bg.png);
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    height: 633px;
+    width: 100%;
+  }
+
+  .text-box hr {
+    width: 70%;
+    height: 2px;
+    color: #fff;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .text-box .fixed-phrase {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .text-box .fixed-phrase p {
+    font-size: 0.8rem;
+  }
+}
+/* ▲▲ 768px以上 ▲▲ */
 
 /* Footer */
 footer {
@@ -588,7 +630,7 @@ Topページ（home）
     opacity: 1;
     -webkit-transition: all 0.6s ease;
     transition: all 0.6s ease;
-  } 
+  }
 }/* ▲▲ 768px以上 ▲▲ */
 
 /*************************
