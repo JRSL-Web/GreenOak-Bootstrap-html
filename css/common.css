@@ -484,6 +484,7 @@ footer hr {
 Topページ（home）
 **************************/
 
+/* ▼▼ mobile ▼▼ */
 #home video {
   position: absolute;
 }
@@ -494,6 +495,8 @@ Topページ（home）
   top: 40%;
   padding: 1.5rem 2rem;
 }
+/* ▲▲ mobile ▲▲ */
+
 
 /* ▼▼ 768px以上 ▼▼ */
 @media only screen and (min-width: 768px) {
@@ -592,6 +595,7 @@ Topページ（home）
 事業内容（services）
 **************************/
 
+/* ▼▼ mobile ▼▼ */
 #services .main-content-header {
   background-image: url(../images/services_mv.jpg);
   background-position: center center;
@@ -608,8 +612,8 @@ Topページ（home）
   padding-top: 30%;
   padding-bottom: calc(100% - 2.5rem - 30% );
 }
+/* ▲▲ mobile ▲▲ */
 
-/* width: calc(100% / 2 ); */
 
 /* ▼▼ 768px以上 ▼▼ */
 @media only screen and (min-width: 768px) { 
@@ -648,6 +652,7 @@ Topページ（home）
 会社概要（about）
 **************************/
 
+/* ▼▼ mobile ▼▼ */
 #about .main-content-header {
   background-image: url(../images/about_mv.jpg);
   background-position: center center;
@@ -678,6 +683,8 @@ Topページ（home）
   margin: 0 auto;
   padding: 0;
 }
+/* ▲▲ mobile ▲▲ */
+
 
 /* ▼▼ 768px以上 ▼▼ */
 @media only screen and (min-width: 768px) {
@@ -738,6 +745,7 @@ Topページ（home）
 よくある質問（faq）
 **************************/
 
+/* ▼▼ mobile ▼▼ */
 #faq .main-content-header {
   background-image: url(../images/faq_mv.jpg);
   background-position: center center;
@@ -757,6 +765,8 @@ Topページ（home）
   /*padding-top: 30%;
   padding-bottom: calc(100% - 2.5rem - 30% );*/
 }
+/* ▲▲ mobile ▲▲ */
+
 
 /* ▼▼ 768px以上 ▼▼ */
 @media only screen and (min-width: 768px) {
@@ -794,6 +804,7 @@ Topページ（home）
 トピックス（topics）
 **************************/
 
+/* ▼▼ mobile ▼▼ */
 #topics .main-content-header {
   background-image: url(../images/topics_mv.jpg);
   background-position: center center;
@@ -812,6 +823,8 @@ Topページ（home）
   opacity: 0.70; /* 70％不透明度(＝30％透過) */
   background-color: #fff;
 }
+/* ▲▲ mobile ▲▲ */
+
 
 /* ▼▼ 768px以上 ▼▼ */
 @media only screen and (min-width: 768px) {
@@ -843,6 +856,7 @@ Topページ（home）
 お問い合わせ（contact）
 **************************/
 
+/* ▼▼ mobile ▼▼ */
 #contact .main-content-header {
   background-blend-mode: overlay;
   background-color: rgba(28, 109, 108, 0.7);
@@ -856,6 +870,8 @@ Topページ（home）
   height: 200px;
   width: 100%;
 }
+/* ▲▲ mobile ▲▲ */
+
 
 /* ▼▼ 768px以上 ▼▼ */
 @media only screen and (min-width: 768px) {
