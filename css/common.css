@@ -726,6 +726,8 @@ Topページ（home）
     padding-left: 0 !important;
   }
 }
+/* ▲▲ 768px以上 ▲▲ */
+
 
 /*************************
 よくある質問（faq）
@@ -780,6 +782,8 @@ Topページ（home）
     margin-top: -170px;
   }
 }
+/* ▲▲ 768px以上 ▲▲ */
+
 
 /*************************
 トピックス（topics）
@@ -827,6 +831,7 @@ Topページ（home）
     width: 32%;
   }
 }
+/* ▲▲ 768px以上 ▲▲ */
 
 
 /*************************
@@ -905,11 +910,14 @@ Topページ（home）
     font-size: 0.8rem;
   }
 }
+/* ▲▲ 768px以上 ▲▲ */
+
 
 /*************************
 サンキュページ（thanks）
 **************************/
 
+/* ▼▼ mobile ▼▼ */
 #thanks .main-content-header {
   background-image: url(../images/thanks_mv.jpg);
   background-position: right top;
@@ -923,6 +931,7 @@ Topページ（home）
   justify-content: center;
   align-items: center;
 }
+/* ▲▲ mobile ▲▲ */
 
 /* ▼▼ 768px以上 ▼▼ */
 @media only screen and (min-width: 768px) {
@@ -940,22 +949,24 @@ Topページ（home）
     align-items: center;
   }
 }
+/* ▲▲ 768px以上 ▲▲ */
 
 
 /*************************
 プライバシーポリシー（privacy）
 **************************/
 
+/* ▼▼ mobile ▼▼ */
 #privacy .main-content-header {
   background-blend-mode: overlay;
   background-color: rgba(33, 37, 41, 0.7);
   background-image: url(../images/privacy_policy_mv.jpg);
-  background-position: left top;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
   padding: 0;
-  height: 300px;
+  height: 200px;
   width: 100%;
 }
 
@@ -963,15 +974,60 @@ Topページ（home）
   opacity: 0.70; /* 70％不透明度(＝30％透過) */
   background-color: #fff;
 }
+/* ▲▲ mobile ▲▲ */
+
+
+/* ▼▼ 768px以上 ▼▼ */
+@media only screen and (min-width: 768px) {
+  #privacy .main-content-header {
+    background-blend-mode: overlay;
+    background-color: rgba(33, 37, 41, 0.7);
+    background-image: url(../images/privacy_policy_mv.jpg);
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    padding: 0;
+    height: 300px;
+    width: 100%;
+  }
+
+  #privacy .main-content-header .page-title {
+    opacity: 0.70; /* 70％不透明度(＝30％透過) */
+    background-color: #fff;
+  }
+}
+/* ▲▲ 768px以上 ▲▲ */
 
 
 /*************************
 クッキーポリシー （cookies）
 **************************/
 
+/* ▼▼ mobile ▼▼ */
 #cookies .main-content-header {
   background-image: url(../images/cookies_policy_mv.jpg);
-  background-position: left top;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  padding: 0;
+  height: 200px;
+  width: 100%;
+}
+
+#cookies .main-content-header .page-title {
+  opacity: 0.70; /* 70％不透明度(＝30％透過) */
+  background-color: #fff;
+}
+/* ▲▲ mobile ▲▲ */
+
+
+/* ▼▼ 768px以上 ▼▼ */
+@media only screen and (min-width: 768px) {
+#cookies .main-content-header {
+  background-image: url(../images/cookies_policy_mv.jpg);
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
@@ -984,6 +1040,9 @@ Topページ（home）
   opacity: 0.70; /* 70％不透明度(＝30％透過) */
   background-color: #fff;
 }
+}
+/* ▲▲ 768px以上 ▲▲ */
+
 
 /*************************
 クッキー 同意 ポップアップウインドウ （homeのみ）
