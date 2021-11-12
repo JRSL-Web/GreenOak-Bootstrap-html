@@ -632,9 +632,14 @@ Topページ（home）
   }
 
   #services .labuan-movie {
-    width: 560px;
-    height: auto;
-    margin: 0 auto;
+    width: 560px !important;
+    height: 315px !important;
+    /*margin: 1rem auto;*/
+  }
+
+  #services .ibfc-logo {
+    width: 509px !important;
+    height: 300px !important;
   }
 }/* ▲▲ 768px以上 ▲▲ */
 
