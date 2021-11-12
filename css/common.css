@@ -4,7 +4,7 @@ Site Name: Green Oak PCC Ltd.
 Site URL: https://greenoakpcc.com/
 Author: JRSL
 Copyright: © 2021 Green Oak PCC Ltd. All rights reserved.
-Last Updated: 2021.11.11
+Last Updated: 2021.11.12
 
 Stylesheet: common Stylesheet
 
@@ -837,58 +837,74 @@ Topページ（home）
   background-blend-mode: overlay;
   background-color: rgba(28, 109, 108, 0.7);
   background-image: url(../images/contact_mv.jpg);
-  background-position: left top;
+  background-position: center center;
   background-repeat: no-repeat;
+  /*background-size: auto 200px;*/
   background-size: cover;
   margin: 0 auto;
   padding: 0;
-  height: 650px;
+  height: 200px;
   width: 100%;
 }
 
-label {
-  padding-top: 7px;
-}
+/* ▼▼ 768px以上 ▼▼ */
+@media only screen and (min-width: 768px) {
+  #contact .main-content-header {
+    background-blend-mode: overlay;
+    background-color: rgba(28, 109, 108, 0.7);
+    background-image: url(../images/contact_mv.jpg);
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    padding: 0;
+    height: 650px;
+    width: 100%;
+  }
 
-.form-group {
-  margin-bottom: 0;
-}
+  #contact label {
+    padding-top: 7px;
+  }
 
-.require_item {
-  width: 62.5%;
-  padding: 3.75% 0;
-}
+  #contact .form-group {
+    margin-bottom: 0;
+  }
 
-#contact .label-required::after {
-  background-color: #dc3545;
-  color: #fff;
-  content: "必須";
-  display: inline-block;
-  height: 1.4rem;
-  line-height: 1.4rem;
-  margin-left: 8px;
-  padding: 0 0.5rem;
-  text-align: center;
-  border: 1px solid #dc3545;
-  border-radius: 3px;
-  font-size: 0.8rem;
-}
+  #contact .require_item {
+    width: 62.5%;
+    padding: 3.75% 0;
+  }
 
-#contact .label-optional::after {
-  background-color: #6c757d;
-  color: #fff;
-  content: "任意";
-  display: inline-block;
-  height: 1.4rem;
-  line-height: 1.4rem;
-  margin-left: 8px;
-  padding: 0 0.5rem;
-  text-align: center;
-  border: 1px solid #6c757d;
-  border-radius: 3px;
-  font-size: 0.8rem;
-}
+  #contact .label-required::after {
+    background-color: #dc3545;
+    color: #fff;
+    content: "必須";
+    display: inline-block;
+    height: 1.4rem;
+    line-height: 1.4rem;
+    margin-left: 8px;
+    padding: 0 0.5rem;
+    text-align: center;
+    border: 1px solid #dc3545;
+    border-radius: 3px;
+    font-size: 0.8rem;
+  }
 
+  #contact .label-optional::after {
+    background-color: #6c757d;
+    color: #fff;
+    content: "任意";
+    display: inline-block;
+    height: 1.4rem;
+    line-height: 1.4rem;
+    margin-left: 8px;
+    padding: 0 0.5rem;
+    text-align: center;
+    border: 1px solid #6c757d;
+    border-radius: 3px;
+    font-size: 0.8rem;
+  }
+}
 
 /*************************
 サンキュページ（thanks）
@@ -896,16 +912,33 @@ label {
 
 #thanks .main-content-header {
   background-image: url(../images/thanks_mv.jpg);
-  background-position: left top;
+  background-position: right top;
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
   padding: 0;
-  height: 300px;
+  height: 200px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* ▼▼ 768px以上 ▼▼ */
+@media only screen and (min-width: 768px) {
+  #thanks .main-content-header {
+    background-image: url(../images/thanks_mv.jpg);
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    padding: 0;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 
