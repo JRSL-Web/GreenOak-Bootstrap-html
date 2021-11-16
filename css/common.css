@@ -781,7 +781,8 @@ Topページ（home）
   margin: 0 auto;
   padding: 0;
   width: auto;
-  height: 500px;
+  height: 200px;
+  /*height: 500px;*/
 }
 
 #faq .main-content-header .page-title {
@@ -801,7 +802,7 @@ Topページ（home）
     background-size: cover;
     margin: 0 auto;
     padding: 0;
-    height: 650px;
+    height: 600px;
     width: 100%;
   }
 
@@ -838,7 +839,8 @@ Topページ（home）
   margin: 0 auto;
   padding: 0;
   width: auto;
-  height: 400px;
+  height: 200px;
+  /*height: 400px;*/
 }
 
 #topics .main-content-header .page-title {
@@ -857,7 +859,7 @@ Topページ（home）
     background-size: cover;
     margin: 0 auto;
     padding: 0;
-    height: 650px;
+    height: 600px;
     width: 100%;
   }
 
@@ -904,7 +906,7 @@ Topページ（home）
     background-size: cover;
     margin: 0 auto;
     padding: 0;
-    height: 650px;
+    height: 600px;
     width: 100%;
   }
 
