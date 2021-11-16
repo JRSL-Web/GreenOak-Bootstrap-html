@@ -4,7 +4,7 @@ Site Name: Green Oak PCC Ltd.
 Site URL: https://greenoakpcc.com/
 Author: JRSL
 Copyright: © 2021 Green Oak PCC Ltd. All rights reserved.
-Last Updated: 2021.11.12
+Last Updated: 2021.11.16
 
 Stylesheet: common Stylesheet
 
@@ -395,7 +395,6 @@ header .nav-item .active::before {
   background-image: url(../images/footer_bg.png);
   background-position: left top;
   background-repeat: no-repeat;
-  /*background-size: auto 400px;*/
   background-size: cover;
   margin: 0 auto;
   padding: 0;
@@ -513,7 +512,6 @@ footer hr {
   width: 25px;
   height: 25px;
   top: -12px;
-  /*top: -5px;*/
   bottom: 0;
   right: 0;
   left: 0;
@@ -543,7 +541,6 @@ Topページ（home）
 /* ▼▼ 768px以上 ▼▼ */
 @media only screen and (min-width: 768px) {
   #home .sticky-top {
-    /*position: -webkit-sticky;*/
     background-color: white;
   }
 
@@ -645,8 +642,6 @@ Topページ（home）
   background-size: auto 200px;
   margin: 0 auto;
   padding: 0;
-  /*width: 100%;
-  height: auto;*/
 }
 
 #services .main-content-header .page-title {
@@ -673,14 +668,11 @@ Topページ（home）
   #services .main-content-header .page-title {
     font-size: 3.5rem;
     padding-top: 20%;
-    /*padding-top: 15%;
-    padding-left: 20%;*/
   }
 
   #services .labuan-movie {
     width: 560px !important;
     height: 315px !important;
-    /*margin: 1rem auto;*/
   }
 
   #services .ibfc-logo {
@@ -702,8 +694,6 @@ Topページ（home）
   background-size: auto 200px;
   margin: 0 auto;
   padding: 0;
-  /*width: 100%;
-  height: auto;*/
 }
 
 #about .main-content-header .page-title {
@@ -720,8 +710,6 @@ Topページ（home）
   background-repeat: no-repeat;
   background-size: auto 500px;
   position: relative;
-  /*height: 380px;
-  width: 100%;*/
   margin: 0 auto;
   padding: 0;
 }
@@ -746,8 +734,6 @@ Topページ（home）
     /* background-color: #fff; */
     font-size: 3.5rem;
     padding-top: 20%;
-    /*padding-top: 15%;
-    padding-left: 20%;*/
   }
 
   #about .catch-image {
@@ -792,8 +778,6 @@ Topページ（home）
   background-image: url(../images/faq_mv.jpg);
   background-position: center center;
   background-repeat: no-repeat;
-  /*background-size: auto 500px;
-  background-size: cover;*/
   margin: 0 auto;
   padding: 0;
   width: auto;
@@ -804,8 +788,6 @@ Topページ（home）
   opacity: 0.70; /* 70％不透明度(＝30％透過) */
   background-color: #0b504f;
   font-size: 2.5rem;
-  /*padding-top: 30%;
-  padding-bottom: calc(100% - 2.5rem - 30% );*/
 }
 /* ▲▲ mobile ▲▲ */
 
@@ -857,8 +839,6 @@ Topページ（home）
   padding: 0;
   width: auto;
   height: 400px;
-  /*height: 650px;
-  width: 100%;*/
 }
 
 #topics .main-content-header .page-title {
@@ -872,7 +852,6 @@ Topページ（home）
 @media only screen and (min-width: 768px) {
   #topics .main-content-header {
     background-image: url(../images/topics_mv.jpg);
-    /*background-position: left top;*/
     background-position: left bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -905,7 +884,6 @@ Topページ（home）
   background-image: url(../images/contact_mv.jpg);
   background-position: center center;
   background-repeat: no-repeat;
-  /*background-size: auto 200px;*/
   background-size: cover;
   margin: 0 auto;
   padding: 0;
