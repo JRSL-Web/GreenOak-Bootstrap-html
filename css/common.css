@@ -776,6 +776,7 @@ Topページ（home）
 /* ▼▼ mobile ▼▼ */
 #faq .main-content-header {
   background-image: url(../images/faq_mv.jpg);
+  /*background-position: center bottom;*/
   background-position: center center;
   background-repeat: no-repeat;
   margin: 0 auto;
