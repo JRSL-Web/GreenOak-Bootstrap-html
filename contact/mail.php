@@ -5,7 +5,7 @@
 #  GREEN OAK PCC Ltd.
 #  お問い合わせページ
 #  Introduction Date: 2021.09.13
-#  Last Updated: 2021.11.09
+#  Last Updated: 2021.11.18
 #  
 #  PHPメールプログラム　フリー版 ver2.0.0 最終更新日2021/05/20
 #　改造や改変は自己責任で行ってください。
@@ -38,11 +38,11 @@ if (version_compare(PHP_VERSION, '5.1.0', '>=')) {//PHP5.1.0以上の場合の�
 $site_top = "https://greenoakpcc.com/stg/index.html";
 
 //管理者のメールアドレス ※メールを受け取るメールアドレス(複数指定する場合は「,」で区切ってください 例 $to = "aa@aa.aa,bb@bb.bb";)
-$to = "web@jrsl-support.com";
+$to = "contact@japanriskspecialist.com";
 
 //自動返信メールの送信元メールアドレス
 //必ず実在するメールアドレスでかつ出来る限り設置先サイトのドメインと同じドメインのメールアドレスとすることを強く推奨します
-$from = "web@jrsl-support.com";
+$from = "contact@japanriskspecialist.com";
 
 //フォームのメールアドレス入力箇所のname属性の値（name="○○"　の○○部分）
 $Email = "Email";
