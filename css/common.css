@@ -720,7 +720,9 @@ Topページ（home）
 @media only screen and (min-width: 768px) {
   #about .main-content-header {
     background-image: url(../images/about_mv.jpg);
-    background-position: left top;
+    background-position: center center;
+    /*background-position: center bottom;
+    background-position: left top;*/
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 auto;
