@@ -656,7 +656,7 @@ Topページ（home）
 @media only screen and (min-width: 768px) { 
   #services .main-content-header {
     background-image: url(../images/services_mv.jpg);
-    background-position: left top;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 auto;
@@ -667,7 +667,7 @@ Topページ（home）
 
   #services .main-content-header .page-title {
     font-size: 3.5rem;
-    padding-top: 20%;
+    padding-top: 10%;
   }
 
   #services .labuan-movie {
@@ -720,7 +720,7 @@ Topページ（home）
 @media only screen and (min-width: 768px) {
   #about .main-content-header {
     background-image: url(../images/about_mv.jpg);
-    background-position: center center;
+    background-position: center bottom;
     /*background-position: center bottom;
     background-position: left top;*/
     background-repeat: no-repeat;
@@ -735,7 +735,7 @@ Topページ（home）
     /* opacity: 0.70; 70％不透明度(＝30％透過) */
     /* background-color: #fff; */
     font-size: 3.5rem;
-    padding-top: 20%;
+    padding-top: 10%;
   }
 
   #about .catch-image {
