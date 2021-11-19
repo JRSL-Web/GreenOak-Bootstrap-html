@@ -639,15 +639,19 @@ Topページ（home）
   background-image: url(../images/services_mv.jpg);
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: auto 200px;
+  /*background-size: auto 200px;*/
   margin: 0 auto;
   padding: 0;
+  width: 100%;
+  height: 200px;
 }
 
 #services .main-content-header .page-title {
+  opacity: 0.70; /* 70％不透明度(＝30％透過) */
+  background-color: #0b504f;
   font-size: 2.5rem;
-  padding-top: 30%;
-  padding-bottom: calc(100% - 2.5rem - 30% );
+  /*padding-top: 30%;
+  padding-bottom: calc(100% - 2.5rem - 30% );*/
 }
 /* ▲▲ mobile ▲▲ */
 
@@ -691,15 +695,19 @@ Topページ（home）
 
 /* ▼▼ mobile ▼▼ */
 #about .main-content-header {
-  background-image: url(../images/about_mv.jpg);
+  background-image: url(../images/about_sp_mv.jpg);
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: auto 200px;
+  /*background-size: auto 200px;*/
   margin: 0 auto;
   padding: 0;
+  width: 100%;
+  height: 200px;
 }
 
 #about .main-content-header .page-title {
+  opacity: 0.70; /* 70％不透明度(＝30％透過) */
+  background-color: #0b504f;
   font-size: 2.5rem;
   padding-top: 30%;
   padding-bottom: calc(100% - 2.5rem - 30% );
