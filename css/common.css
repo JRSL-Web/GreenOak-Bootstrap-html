@@ -629,6 +629,11 @@ Topページ（home）
     transition: all 0.6s ease;
   }
 
+  #home .row-height {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
 }/* ▲▲ 768px以上 ▲▲ */
 
 /*************************
