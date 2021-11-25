@@ -702,7 +702,7 @@ Topページ（home）
 /* ▼▼ mobile ▼▼ */
 #about .main-content-header {
   background-image: url(../images/about_sp_mv.jpg);
-  background-position: center center;
+  background-position: center bottom;
   background-repeat: no-repeat;
   /*background-size: auto 200px;*/
   margin: 0 auto;
