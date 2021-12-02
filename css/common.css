@@ -951,6 +951,7 @@ Topページ（home）
     padding: 3.75% 0;
   }
 
+  /*
   #contact .label-required::after {
     background-color: #dc3545;
     color: #fff;
@@ -980,6 +981,7 @@ Topページ（home）
     border-radius: 3px;
     font-size: 0.8rem;
   }
+  */
 }
 /* ▲▲ 768px以上 ▲▲ */
 
