@@ -308,6 +308,33 @@ a.text-success:hover, a.text-success:focus {
 共通
 **************************/
 
+/*
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100%;
+  overflow: hidden;
+  overflow-y: hidden;　縦のスクロールバーを非表示　※上下のスクロールができなくなる 
+}
+
+#wrap {
+  width: 100%;
+  overflow: hidden;
+}
+
+
+main {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+}
+*/
+
 /* Global Navigation */
 
 header .nav-item .nav-link {
