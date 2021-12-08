@@ -561,6 +561,7 @@ Topページ（home）
 **************************/
 
 /* ▼▼ mobile ▼▼ */
+
 #home video {
   position: absolute;
 }
@@ -573,6 +574,17 @@ Topページ（home）
 }
 /* ▲▲ mobile ▲▲ */
 
+@media only screen and (min-width: 576px) {
+  #home video {
+    position: absolute;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    background-size: cover;
+    z-index: -1;
+  }
+}
 
 /* ▼▼ 768px以上 ▼▼ */
 @media only screen and (min-width: 768px) {
