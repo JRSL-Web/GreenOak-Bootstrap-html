@@ -682,6 +682,19 @@ Topページ（home）
     flex-wrap: wrap;
   }
 
+  #home .features-title {
+    height: 70px;
+    width: 100%;
+    display: inline-block;
+    /*display: table-cell;*/
+    vertical-align: middle;
+    /*text-align: center;*/
+  }
+
+  #home .features {
+    height: 160px;
+  }
+
 }/* ▲▲ 768px以上 ▲▲ */
 
 /*************************
