@@ -694,6 +694,7 @@ Topページ（home）
 
   #home .features {
     height: 160px;
+    line-height: 1.8;
   }
 
 }/* ▲▲ 768px以上 ▲▲ */
