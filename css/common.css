@@ -572,6 +572,11 @@ Topページ（home）
   top: 40%;
   padding: 1.5rem 2rem;
 }
+
+#home .features-title {
+  padding: 0.5rem;
+  text-align: center;
+}
 /* ▲▲ mobile ▲▲ */
 
 @media only screen and (min-width: 576px) {
