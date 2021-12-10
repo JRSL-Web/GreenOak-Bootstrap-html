@@ -564,7 +564,8 @@ Topページ（home）
 
 #home .bg-img {
   width: 100%;
-  height: 100vh;
+  height: auto;
+  /*height: 100vh;*/
   position: relative;
   overflow: hidden;
 }
@@ -580,11 +581,11 @@ Topページ（home）
 #home .tagline {
   position: absolute;
   width: 100%;
-  top: 17%;
-  /*top: 12%;*/
-  /*bottom: 2%;*/
-  padding: 0 2rem;
-  /*padding: 1.5rem 2rem;*/
+  /*top: 17%;
+  top: 12%;*/
+  /*bottom: 2%;
+  padding: 0 2rem;*/
+  margin-top: -10%;
 }
 
 #home .features-title {
@@ -595,33 +596,21 @@ Topページ（home）
 
 /* ▼▼ 768px以上 ▼▼ */
 @media only screen and (min-width: 768px) {
-  #home .sticky-top {
-    background-color: white;
-  }
 
   #home .bg-img {
     width: 100%;
-    height: 100vh;
+    height: auto;
+    /*height: 100vh;*/
     position: relative;
     overflow: hidden;
   }
 
   #home video {
-    /*position: fixed;*/
     position: absolute;
-    /*display: flex;
-    justify-content: center;*/
-    /*align-items: center;*/
     width: 100%;
     height: auto;
-    /*width: auto;
-    height: auto;*/
     max-width: none;
     max-height: none;
-    /*visibility: visible;
-    min-width: 100%;
-    min-height: 100%;*/
-    /*background-position: 50% 50%;*/ 
     background-size: cover;
     z-index: -1;
   }
@@ -629,9 +618,19 @@ Topページ（home）
   #home .tagline {
     position: absolute;
     width: 100%;
+    height: auto;
+    margin-top: -10%;
+    /*vertical-align: bottom;
     top: 70%;
-    padding: 1.5rem 2rem;
+    bottom: 10%;
+    padding: 1.5rem 2rem;*/
   }
+
+  /*
+  #home main {
+    margin-top: -200px;
+  }
+  */
 
   #home .lead {
     padding-top: 1rem;
@@ -710,6 +709,16 @@ Topページ（home）
   }
 
   #home .about-box {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  #home .faq-box {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  #home .topics-box {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
   }
