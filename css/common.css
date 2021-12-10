@@ -772,6 +772,23 @@ Topページ（home）
     /*padding-top: 10%;*/
   }
 
+  /*
+  #services .catch-box {
+    position: relative;
+    padding: 1rem 1rem;
+  }
+
+  #services .catch-lead {
+    position: absolute;
+    top: 20%;
+  }
+
+  #services .catch-link {
+    position: absolute;
+    top: calc(100% - 20% - 10% );
+  }
+  */
+
   #services .labuan-movie {
     width: 560px !important;
     height: 315px !important;
