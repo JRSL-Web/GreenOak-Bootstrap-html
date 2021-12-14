@@ -748,6 +748,7 @@ Topページ（home）
   /*padding-top: 30%;
   padding-bottom: calc(100% - 2.5rem - 30% );*/
 }
+
 /* ▲▲ mobile ▲▲ */
 
 
@@ -782,7 +783,7 @@ Topページ（home）
 
   /*#services .catch-item {
     position: relative;
-  }
+  } 
 
   #services .catch-title {
     position: absolute;
@@ -794,18 +795,14 @@ Topページ（home）
     position: absolute;
     top: 20%;
   }
-  */
+ */
 
   #services .catch-link {
     position: absolute;
-    /*top: calc(100% - 20% - 10% );*/
-    bottom: 20%;
-    left: 35%;
-    /*text-align: center;
-    align-items: center;*/
+    bottom: 10%;
+    left: calc((100% - 174.5px) * 0.5);
   }
   
-
   #services .labuan-movie {
     width: 560px !important;
     height: 315px !important;
@@ -816,7 +813,6 @@ Topページ（home）
     height: 300px !important;
   }
 }/* ▲▲ 768px以上 ▲▲ */
-
 
 /*************************
 会社概要（about）
