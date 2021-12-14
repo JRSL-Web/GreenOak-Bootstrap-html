@@ -773,12 +773,12 @@ Topページ（home）
   }
 
   
-  /*
+  
   #services .catch-box {
     position: relative;
-    padding: 1rem 1rem;
+    /*padding: 1rem 1rem;*/
   }
-  */
+  
 
   /*#services .catch-item {
     position: relative;
@@ -796,12 +796,15 @@ Topページ（home）
   }
   */
 
-  /*
   #services .catch-link {
-    /*position: absolute;
-    top: calc(100% - 20% - 10% );
+    position: absolute;
+    /*top: calc(100% - 20% - 10% );*/
+    bottom: 20%;
+    left: 35%;
+    /*text-align: center;
+    align-items: center;*/
   }
-  */
+  
 
   #services .labuan-movie {
     width: 560px !important;
