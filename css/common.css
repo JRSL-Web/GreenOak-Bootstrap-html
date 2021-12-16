@@ -4,7 +4,7 @@ Site Name: Green Oak PCC Ltd.
 Site URL: https://greenoakpcc.com/
 Author: JRSL
 Copyright: © 2021 Green Oak PCC Ltd. All rights reserved.
-Last Updated: 2021.12.14
+Last Updated: 2021.12.16
 
 Stylesheet: common Stylesheet
 
@@ -770,34 +770,46 @@ Topページ（home）
     background-color: #0b504f;
     font-size: 3.5rem;
     padding: 1.5rem;
-    /*padding-top: 10%;*/
   }
   
   #services .catch-box {
     position: relative;
+	  text-align: center !important;
+	  margin:0 auto;
   }
-  
-
-  /*#services .catch-item {
-    position: relative;
+	
+  #services .catch-item {
+    /*position: absolute;
+	  top: 5%;
+	  left: 5%;
+	  right: 8%*/
+	  margin:0 auto;
+	  padding: 1.2rem;
+	  text-align: center !important;
   } 
 
   #services .catch-title {
-    position: absolute;
-    top: 5%;
-    left: 5%;
+    /*position: absolute;
+    top: 5%;*/
+	  font-size: 1rem !important;
+	  text-align: center !important;
+	  margin: 0 auto !important;
   }
 
   #services .catch-lead {
-    position: absolute;
-    top: 20%;
+    /*position: absolute;*/
+    top: 10%;
+	  /*left: calc((100% - 190px) * 0.5);*/
+	  font-size: 0.9rem !important;
+	  text-align: center !important;
   }
- */
 
   #services .catch-link {
     position: absolute;
-    bottom: 10%;
-    left: calc((100% - 174.5px) * 0.5);
+    bottom: 7%;
+    left: calc((100% - 155px) * 0.5);
+	  font-size: 0.9rem !important;
+	  text-align: center !important;
   }
   
   #services .labuan-movie {
@@ -810,6 +822,74 @@ Topページ（home）
     height: 300px !important;
   }
 }/* ▲▲ 768px以上 ▲▲ */
+
+/* ▼▼ 1200px以上 ▼▼ */
+@media only screen and (min-width: 1200px) { 
+  #services .main-content-header {
+    background-image: url(../images/services_mv.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    padding: 0;
+    height: 600px;
+    width: 100%;
+  }
+
+  #services .main-content-header .page-title {
+    opacity: 0.70; /* 70％不透明度(＝30％透過) */
+    background-color: #0b504f;
+    font-size: 3.5rem;
+    padding: 1.5rem;
+  }
+  
+  #services .catch-box {
+    position: relative;
+    text-align: center !important;
+	  margin:0 auto;
+  }
+  
+  #services .catch-item {
+    /*position: relative;*/
+    margin:0 auto;
+	  padding: 1.2rem;
+	  text-align: center !important;
+  } 
+
+  #services .catch-title {
+    /*position: absolute;
+    top: 5%;*/
+    font-size: 1.325rem;
+    text-align: center !important;
+	  margin: 0 auto !important;
+  }
+
+  #services .catch-lead {
+    /*position: absolute;*/
+    top: 20%;
+    font-size: 1rem !important;
+	  text-align: center !important;
+  }
+ 
+
+  #services .catch-link {
+    position: absolute;
+    bottom: 10%;
+    left: calc((100% - 174.5px) * 0.5);
+    font-size: 1rem !important;
+	  text-align: center !important;
+  }
+  */
+  #services .labuan-movie {
+    width: 560px !important;
+    height: 315px !important;
+  }
+
+  #services .ibfc-logo {
+    width: 509px !important;
+    height: 300px !important;
+  }
+}/* ▲▲ 1200px以上 ▲▲ */
 
 /*************************
 会社概要（about）
