@@ -953,15 +953,17 @@ Topページ（home）
   }
 
   #about .mission-box {
-    
+    position: absolute;
+    top: calc((100% - (115px + 156.8px)) / 2 );
   }
 
   #about .mission {
-    position: absolute;
+    /*position: absolute;*/
     width: calc(100% / 2 );
-    top: 50%;
+    margin: 0 auto;
+    /*top: 50%;
 	  left: 50%;
-	  transform: translate(-50%, -50%);
+	  transform: translate(-50%, -50%);*/
   }
 
   #about table th {
